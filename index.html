@@ -6,8 +6,8 @@
   </head>
   <body>
     <header>
-      <img src="img/logo.svg" width="160px" height="65px" alt="Студия Нёрдс">
-      <h1>Студия Нёрдс</h1><!--(В дальнейшем заголовок спрячу)-->
+      <a><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
+      <h1 class="visual-hidden">Студия Нёрдс</h1><!--(В дальнейшем заголовок спрячу)-->
       <nav class="main-nav">
         <ul class="main-links">
           <li><a href="#">Студия</a></li>
@@ -22,23 +22,25 @@
 
       <section class="slider">
         <div class="slide-1">
-          <img src="img/slide1.png" width="698px" height="413px" alt="Слайдер 1">
-          <p><span class="slider-header">Долго, дорого, скурпулезно.</span><br>
-          Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
+          <p class="slider-header">Долго, дорого, скурпулезно.</p>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="#" class="btn">Узнать больше</a>
         </div>
         <div class="slide-2">
-          <img src="img/slide2.png" width="663px" height="430px" alt="Слайдер 2">
-          <p><span class="slider-header">Любим математику как никто другой.</span><br>
-          Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-          <a href="#">Узнать больше</a>
+          <p class="slider-header">Любим математику как никто другой.</p>
+          <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+          <a href="#" class="btn">Узнать больше</a>
         </div>
         <div class="slide-3">
-          <img src="img/slide3.png" width="759px" height="411px" alt="Слайдер 3">
-          <p><span class="slider-header">Только ночь, только хардкор.</span><br>
-          Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</a>
+          <p class="slider-header">Только ночь, только хардкор.</p>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="#" class="btn">Узнать больше</a>
         </div>
-        <!--(Тут добавить кнопки)-->
+        <div class="slider-buttons">
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
       </section>
     </header>
 
@@ -46,22 +48,22 @@
       <section class="service">
         <ul class="service-list">
           <li class="service-item item-1">
-            <img src="img/illustration-1.jpg" width="300px" height="146px" alt="Веб-сайты">
+            <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="btn red">Заказать</a>
           </li>
           <li class="service-item item-2">
-            <img src="img/illustration-2.jpg" width="300px" height="146px" alt="Приложения">
+            <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите Топ-10 приложений в AppStore и Google Play</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="btn green">Заказать</a>
           </li>
           <li class="service-item item-3">
-            <img src="img/illustration-3.jpg" width="300px" height="146px" alt="Презентации">
+            <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-            <a href="#">Заказать</a>
+            <a href="#" class="btn yellow">Заказать</a>
           </li>
         </ul>
       </section>
@@ -78,7 +80,7 @@
           </ul>
         </div>
         <div class="about-us-stat">
-          <img src="img/nerds-illustration.jpeg" width="360px" height="208px" alt="Студия Нёрдс">
+          <img src="img/nerds-illustration.jpeg" width="360" height="208" alt="Студия Нёрдс">
           <p>С 2004 года любим точность во всем:</p>
           <ul class="stats">
             <li class="stats-item">
@@ -99,36 +101,40 @@
 
       <section class="partners">
         <ul class="partners-list">
-          <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199px" height="68px" alt="HTMLACADEMY"></a></li>
-          <li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209px" height="87px" alt="BORODINSKY"></a></li>
-          <li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185px" height="52px" alt="PINK"></a></li>
-          <li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173px" height="84px" alt="MISHKA"></a></li>
+          <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="HTMLACADEMY"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209" height="87" alt="BORODINSKY"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="PINK"></a></li>
+          <li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="MISHKA"></a></li>
         </ul>
       </section>
     </main>
 
     <footer>
       <section class="contact-map">
-        <img src="img/map_d.jpg" width="1440px" height="416px" alt="Карта">
+        <img src="img/map_d.jpg" width="1440" height="416" alt="Карта">
         <div class="contact-info">
           <h2 class="contact-info header">Nerds design studio</h2>
-          <p class="contact-info text">191186, Санкт-Петербург,
-            ул, Б.Конюшенная д.19/8
-            <br>
-            тел. +7(812) 275-75-75
-          </p>
-          <a href="modal.html">Напишите нам</a>
+          <p class="contact-info text">191186, Санкт-Петербург,<br>
+            ул, Б.Конюшенная д.19/8</p>
+
+            <p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
+          <a href="modal.html" class="btn">Напишите нам</a>
         </div>
+      </section>
+
+      <section class="modal-form">
+        <!--Тут будет форма модалки-->
+
       </section>
 
       <section class="social-thanks">
         <ul class="social-icons">
-          <li class="social-icons-item vk"><a href="https://vk.com/"><img src="img/vk-icon.svg" width="26px" height="15px" alt="VK">VK</a></li>
-          <li class="social-icons-item fb"><a href="https://facebook.com"><img src="img/fb-icon.svg" width="12px" height="22px" alt="FB">FB</a></li>
-          <li class="social-icons-item inst"><a href="https://instagram.com"><img src="img/insta-icon.svg" width="21px" height="21px" alt="INST">INST</a></li>
+          <li class="social-icons-item vk"><a href="https://vk.com/">VK</a></li>
+          <li class="social-icons-item fb"><a href="https://facebook.com">Facebook</a></li>
+          <li class="social-icons-item inst"><a href="https://instagram.com">Instagram</a></li>
         </ul>
-        <p><span class="sale-hello">Давайте дружить, это выгодно!</span><br>
-          Скидка 10% процентов для друзей из социальных сетей.
+        <p class="sale-hello">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% процентов для друзей из социальных сетей.</p>
         </p>
       </section>
     </footer>
