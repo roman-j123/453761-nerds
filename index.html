@@ -27,15 +27,15 @@
           <p class="text-sub">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
           <a href="#" class="btn" title="Подробная информация о нас">Узнать больше</a>
         </div>
-        <div class="slide-2">
+        <div class="slide-2 visually-hidden">
           <p class="text-header">Любим математику как никто другой.</p>
           <p class="text-sub">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-          <a href="#" class="btn" title="Подробная информация о нас">Узнать больше</a>
+          <a href="#" class="btn" title="Подробная информация о нас" tabindex="-1">Узнать больше</a>
         </div>
-        <div class="slide-3">
+        <div class="slide-3 visually-hidden">
           <p class="text-header">Только ночь, только хардкор.</p>
           <p class="text-sub">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="btn" title="Подробная информация о нас">Узнать больше</a>
+          <a href="#" class="btn" title="Подробная информация о нас" tabindex="-1">Узнать больше</a>
         </div>
         <div class="slider-buttons">
           <button type="button"></button>
@@ -122,14 +122,15 @@
         </div>
       </section>
 
-      <section class="modal-form">
-        <h1>Напишите нам</h1><span>X</span>
-          <form class="contact-form" method="post">
-            <p><label for="user-name">Ваше имя:</label><input class="input-name" title="Напишите ваши Имя и Фамилию" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия"></p>
-            <p><label for="user-email">Ваш e-mail:</label><input class="input-email" title="Напишите вашу почту" type="email" name="user-email" id="user-email" placeholder="email@example.com"></p>
-            <p><label for="user-text">Текст письма:</label></p>
-            <input class="input-text" title="Поле для письма в свободной форме" type="text" name="user-text" id="user-text" placeholder="В свободной форме">
-            <button type="submit" title="Нажмите чтобы отправить нам письмо" class="btn" value="Отправить">Отправить</button>
+      <section class="modal-form visually-hidden">
+        <h1>Напишите нам</h1>
+        <button class="modal-close" type="button" tabindex="-1">Закрыть</button>
+          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <p><label for="user-name">Ваше имя:</label><input class="input-name" title="Напишите ваши Имя и Фамилию" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" tabindex="-1"></p>
+            <p><label for="user-email">Ваш e-mail:</label><input class="input-email" title="Напишите вашу почту" type="email" name="user-email" id="user-email" placeholder="email@example.com" tabindex="-1"></p>
+            <p><label for="user-text">Текст письма:</label><br>
+            <input class="input-text" title="Поле для письма в свободной форме" type="text" name="user-text" id="user-text" placeholder="В свободной форме" tabindex="-1"></p>
+            <button type="submit" title="Нажмите чтобы отправить нам письмо" class="btn" value="Отправить" tabindex="-1">Отправить</button>
           </form>
       </section>
 
