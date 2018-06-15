@@ -30,14 +30,16 @@
             <legend>Стоимость:</legend>
           <div class="price-wrap">
             <div class="price-line">
-              <button class="price-left" type="button" id="lower-value"></button>
+              <button class="price-lower" type="button" aria-label="Минимальная цена"></button>
               <div class="line-value"></div>
-              <button class="price-right" type="button" id="higher-value"></button>
+              <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
             </div>
-                <label for="lower-value">От: </label>
-                <input name="lower-value" id="lower-value" type="text" value="0" placeholder="0">
-                <label for="higher-value">До: </label>
-                <input name="higher-value" id="higher-value" type="text" value="15000" placeholder="15000">
+              <label>От:
+              <input name="lower-value" type="text" value="0">
+              </label>
+              <label>До:
+              <input name="higher-value" type="text" value="15000">
+              </label>
           </div>
         </fieldset>
           <fieldset>
