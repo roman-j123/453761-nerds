@@ -5,6 +5,7 @@
     <title>Студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header>
@@ -35,10 +36,10 @@
               <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
             </div>
               <label>От:
-              <input name="lower-value" type="text" value="0">
+                <input name="lower-value" type="text" value="0">
               </label>
               <label>До:
-              <input name="higher-value" type="text" value="15000">
+                <input name="higher-value" type="text" value="15000">
               </label>
           </div>
         </fieldset>
@@ -82,7 +83,7 @@
                   <label for="cart-check">Корзина</label></li>
               </ul>
           </fieldset>
-          <button type="submit" name="show" class="btn gray">Показать</button>
+          <button type="submit" class="btn gray">Показать</button>
         </form>
       </section>
 
@@ -158,7 +159,7 @@
                 <li><a>1</a></li>
                 <li><a href="">2</a></li>
                 <li><a href="">3</a></li>
-                <li><button type="button" name="next">Следующая</button></li>
+                <li><button type="button">Следующая</button></li>
               </ul>
             </footer>
 
@@ -190,8 +191,8 @@
               <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
             </p>
             <p>
-              <label for="user-text">Текст письма:</label><br>
-              <input class="input-text" type="text" name="user-text" id="user-text" placeholder="В свободной форме">
+              <label>Текст письма:<br>
+              <textarea placeholder="В свободной форме"></textarea></label>
             </p>
             <button type="submit" class="btn" value="Отправить">Отправить</button>
           </form>
