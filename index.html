@@ -8,40 +8,41 @@
   </head>
   <body>
     <header>
-      <a><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс" title="Студия Нёрдс"></a>
+      <a><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
       <h1 class="visually-hidden">Студия Нёрдс</h1>
       <nav class="main-nav">
         <ul class="main-links">
-          <li><a href="#" title="Страница студии">Студия</a></li>
-          <li><a href="#" title="Наши клиенты">Клиенты</a></li>
-          <li><a href="catalog.html" title="Наш магазин шаблонов">Магазин</a></li>
-          <li><a href="#" title="Наши контакты">Контакты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-      </nav>
       <ul class="cart">
-        <li><a href="#" title="Корзина">Корзина</a></li>
+        <li><a href="#">Корзина</a></li>
       </ul>
-
+    </nav>
       <section class="slider">
         <div class="slide-1">
           <p class="text-header">Долго, дорого, скурпулезно.</p>
           <p class="text-sub">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="btn" title="Подробная информация о нас">Узнать больше</a>
+          <p><a href="#" class="btn">Узнать больше</a></p>
         </div>
         <div class="slide-2 visually-hidden">
           <p class="text-header">Любим математику как никто другой.</p>
           <p class="text-sub">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-          <a href="#" class="btn" title="Подробная информация о нас" tabindex="-1">Узнать больше</a>
+          <p><a href="#" class="btn">Узнать больше</a></p>
         </div>
         <div class="slide-3 visually-hidden">
           <p class="text-header">Только ночь, только хардкор.</p>
           <p class="text-sub">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a href="#" class="btn" title="Подробная информация о нас" tabindex="-1">Узнать больше</a>
+          <p><a href="#" class="btn">Узнать больше</a></p>
         </div>
         <div class="slider-buttons">
-          <button type="button"></button>
-          <button type="button"></button>
-          <button type="button"></button>
+          <ul>
+          <li><button type="button" aria-label="Первый слайдер"></button></li>
+          <li><button type="button" aria-label="Второй слайдер"></button></li>
+          <li><button type="button" aria-label="Третий слайдер"></button></li>
+          </ul>
         </div>
       </section>
     </header>
@@ -53,19 +54,19 @@
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a href="#" class="btn red" title="Заказать у нас сайт">Заказать</a>
+            <a href="#" class="btn red" aria-label="Заказать у нас сайт">Заказать</a>
           </li>
           <li class="service-item item-2">
             <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите Топ-10 приложений в AppStore и Google Play</p>
-            <a href="#" class="btn green" title="Заказать у нас приложение">Заказать</a>
+            <a href="#" class="btn green" aria-label="Заказать у нас приложение">Заказать</a>
           </li>
           <li class="service-item item-3">
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-            <a href="#" class="btn yellow" title="Заказать у нас презентацию">Заказать</a>
+            <a href="#" class="btn yellow" aria-label="Заказать у нас презентацию">Заказать</a>
           </li>
         </ul>
       </section>
@@ -101,12 +102,12 @@
         </div>
       </section>
 
-      <section class="partners">
-        <ul class="partners-list">
-          <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss" title="Перейти на сайт интенсива"><img src="img/logo-1.png" width="199" height="68" alt="HTMLACADEMY"></a></li>
-          <li class="partners-item"><a href="#" title="Партнер Бородинский"><img src="img/logo-2.png" width="209" height="87" alt="BORODINSKI"></a></li>
-          <li class="partners-item"><a href="#" title="Партнер Pink"><img src="img/logo-3.png" width="185" height="52" alt="PINK"></a></li>
-          <li class="partners-item"><a href="#" title="Партнер Mishka"><img src="img/logo-4.png" width="173" height="84" alt="MISHKA"></a></li>
+      <section class="clients">
+        <ul class="clients-list">
+          <li class="clients-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Перейти на сайт интенсива HTML ACADEMY"></a></li>
+          <li class="clients-item"><a href="#"><img src="img/logo-2.png" width="209" height="87" alt="Барбершоп BORODINSKI"></a></li>
+          <li class="clients-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Приложение PINK"></a></li>
+          <li class="clients-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Интернет-магазин вязаных игрушек MISHKA"></a></li>
         </ul>
       </section>
     </main>
@@ -118,28 +119,36 @@
           <h2 class="contact-info header">Nerds design studio</h2>
           <p class="contact-info text">191186, Санкт-Петербург,<br>
             ул, Б.Конюшенная д.19/8</p>
-            <a href="tel:+78122757575" title="Позвонить нам по телефону">тел. +7(812) 275-75-75</a>
-          <a href="modal.html" class="btn" title="Написать нам письмо">Напишите нам</a>
+            <a href="tel:+78122757575" aria-label="Позвонить нам по телефону">тел. +7(812) 275-75-75</a>
+          <a href="modal.html" class="btn">Напишите нам</a>
         </div>
       </section>
 
       <section class="modal-form visually-hidden">
-        <h1>Напишите нам</h1>
-        <button class="modal-close" type="button" tabindex="-1">Закрыть</button>
+        <h2>Напишите нам</h2>
+        <button class="modal-close" type="button">Закрыть</button>
           <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-            <p><label for="user-name">Ваше имя:</label><input class="input-name" title="Напишите ваши Имя и Фамилию" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия" tabindex="-1"></p>
-            <p><label for="user-email">Ваш e-mail:</label><input class="input-email" title="Напишите вашу почту" type="email" name="user-email" id="user-email" placeholder="email@example.com" tabindex="-1"></p>
-            <p><label for="user-text">Текст письма:</label><br>
-            <input class="input-text" title="Поле для письма в свободной форме" type="text" name="user-text" id="user-text" placeholder="В свободной форме" tabindex="-1"></p>
-            <button type="submit" title="Нажмите чтобы отправить нам письмо" class="btn" value="Отправить" tabindex="-1">Отправить</button>
+            <p>
+              <label for="user-name">Ваше имя:</label>
+              <input class="input-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">Ваш e-mail:</label>
+              <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-text">Текст письма:</label><br>
+              <input class="input-text" type="text" name="user-text" id="user-text" placeholder="В свободной форме">
+            </p>
+            <button type="submit" class="btn" value="Отправить">Отправить</button>
           </form>
       </section>
 
       <section class="social-thanks">
         <ul class="social-icons">
-          <li class="social-icons-item vk"><a href="https://vk.com/" title="Наша страница В Контакте">VK</a></li>
-          <li class="social-icons-item fb"><a href="https://facebook.com" title="Наша страница на Facebook">Facebook</a></li>
-          <li class="social-icons-item inst"><a href="https://instagram.com" title="Наша страница в Instagram">Instagram</a></li>
+          <li class="social-icons-item vk"><a href="https://vk.com/"><span class="visually-hidden">Наша страница В Контакте</span></a></li>
+          <li class="social-icons-item fb"><a href="https://facebook.com"><span class="visually-hidden">Наша страница на Facebook</span></a></li>
+          <li class="social-icons-item inst"><a href="https://instagram.com"><span class="visually-hidden">Наша страница в Instagram</span></a></li>
         </ul>
         <p class="text-header">Давайте дружить, это выгодно!</p>
         <p class="text-sub">Скидка 10% процентов для друзей из социальных сетей.</p>
