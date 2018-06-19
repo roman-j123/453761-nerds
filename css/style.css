@@ -99,12 +99,20 @@ a {
   font-size: 16px;
   color: #2f3439;
 }
+.slider-buttons
+.buttons-list {
+  list-style: none;
+}
 
 .service h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+.service
+.service-list {
+  list-style: none;
 }
 
 .about-us
@@ -138,6 +146,10 @@ p:last-child {
   list-style: none;
 }
 
+.social-thanks
+.social-icons {
+  list-style: none;
+}
 .social-thanks
 .text-header {
   font-size: 45px;
