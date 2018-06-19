@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <a href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
       <nav class="main-nav">
         <ul class="main-links">
@@ -29,12 +29,12 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-          <div class="price-wrap">
-            <div class="price-line">
-              <button class="price-lower" type="button" aria-label="Минимальная цена"></button>
-              <div class="line-value"></div>
-              <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
-            </div>
+              <div class="price-wrap">
+                <div class="price-line">
+                  <button class="price-lower" type="button" aria-label="Минимальная цена"></button>
+                  <div class="line-value"></div>
+                  <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
+                </div>
               <label>От:
                 <input name="lower-value" type="text" value="0">
               </label>
@@ -113,7 +113,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-pink.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
-                  <div class="visually-hidden">
+                  <div>
                     <a href="product-card.html"><h2>Pink App</h2></a>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Pink за ">9900 руб.</a>
@@ -121,7 +121,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон сайта Borodinski">
-                  <div class="visually-hidden">
+                  <div>
                     <a href="product-card.html"><h2>Barbershop</h2></a>
                     <p>Сайт салона красоты. Для мужчин, да.</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Barbershop за">9900 руб.</a>
@@ -129,7 +129,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон сайта Mishka">
-                  <div class="visually-hidden">
+                  <div>
                     <a href="product-card.html"><h2>Mishka</h2></a>
                     <p>Интернет-магазин вязаных игрушек</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Mishka за">9900 руб.</a>
@@ -137,7 +137,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон сайта Study">
-                  <div class="visually-hidden">
+                  <div>
                     <a href="product-card.html"><h2>A Plus</h2></a>
                     <p>Лендинг курсов повышения квалификации</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Study за ">9900 руб.</a>
@@ -145,7 +145,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
-                  <div class="visually-hidden">
+                  <div>
                     <a href="product-card.html"><h2>KBACT</h2></a>
                     <p>Промо-сайт производителя крафтового кваса</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон сайта Kvast за ">9900 руб.</a>
@@ -178,7 +178,7 @@
         </div>
       </section>
 
-      <section class="modal-form visually-hidden">
+      <section class="modal-form">
         <h2>Напишите нам</h2>
         <button class="modal-close" type="button">Закрыть</button>
           <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
