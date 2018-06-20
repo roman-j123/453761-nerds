@@ -5,45 +5,48 @@ body {
   font-size: 16px;
   font-weight: normal;
   line-height: 24px;
-  color: #2f3439;
 
-  background-color: white;
+  background-color: rgb(255,255,255);
 }
 a {
   text-decoration: none;
 }
 .btn {
-  background-color: #fb565a;
+  background-color: rgb(256,86,90);
   font: inherit;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
-  color: #ffffff;
+  color: rgb(255,255,255);
   border: none;
 }
-.btn:hover{
-  background-color: #e74246;
+.btn:hover,
+.btn:focus{
+  background-color: rgb(231,66,70);
 }
 .btn:active {
-  background-color: #d7373b;
+  background-color: rgb(215,55,59);
+  color: rgba(255,255,255,0.3);
 }
 .green {
-  background-color: #00ca74;
+  background-color: rgb(0,202,116);
 }
-.green:hover {
-  background-color: #00bc6c;
+.green:hover,
+.green:focus {
+  background-color: rgb(0,188,108);
 }
 .green:active {
-  background-color: #00aa62;
+  background-color: rgb(0,170,98);
 }
 .yellow {
-  background-color: #efc84a;
+  background-color: rgb(239,200,74);
 }
-.yellow:hover {
-  background-color: #eab534;
+.yellow:hover,
+.yellow:focus {
+  background-color: rgb(234,181,52);
 }
 .yellow:active {
-  background-color: #e5a722;
+  background-color: rgb(229,167,34);
 }
 
 .visually-hidden {
@@ -58,12 +61,14 @@ a {
 }
 
 .main-header {
-  background-color: #eeeeee;
+  background-color: rgb(238,238,238);
 }
 .main-nav {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #101010;
+  color: rgb(0,0,0);
 }
 .main-links,
 .cart {
@@ -71,93 +76,158 @@ a {
 }
 .main-links a,
 .cart a {
-  color: #101010;
+  color: rgb(0,0,0);
 }
 .main-links a:hover,
 .cart a:hover {
-  color: #fb565a;
+  color: rgb(251,86,90);
 }
 .main-links a:focus,
 .cart a:focus {
+  color: rgb(251,86,90);
 }
 
 .main-links a:active,
 .cart a:active {
-  color: #a6a6a6;
+  color: rgba(0,0,0,0.3);
 }
 
-.text-header {
-  font-weight: bold;
-  color: #000000;
+.slider .slide-1 {
+  background-color: rgb(238,238,238);
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
-.main-header
-.text-header {
+.slider .slide-2 {
+  background-color: rgb(238,238,238);
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.slider .slide-3 {
+  background-color: rgb(238,238,238);
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.slider .text-header {
   font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: rgb(0,0,0);
 }
-.main-header
-.sub-text {
+.slider .text-sub {
   font-size: 16px;
-  color: #2f3439;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(40,49,54);
 }
-.slider-buttons
-.buttons-list {
+.slider-buttons .buttons-list {
   list-style: none;
 }
 
 .service h3 {
-  font-weight: bold;
   font-size: 24px;
+  font-weight: 600;
   line-height: 30px;
   text-transform: uppercase;
+  color: rgb(0,0,0);
 }
-.service
-.service-list {
-  list-style: none;
-}
-
-.about-us
-.text-header {
-  font-size: 45px;
-  line-height: 45px;
-  color: #000000;
-}
-.about-us-details
-.lists {
-  list-style: none;
-}
-.stats-block
-.stats {
-  list-style: none;
-}
-.stats
-p:first-child {
-  font-size: 45px;
-  font-weight: bold;
-  color: #000000;
-}
-.stats
-p:last-child {
-  font-weight: normal;
-  color: #2f3439;
-}
-
-.clients,
-.clients-item {
-  list-style: none;
-}
-
-.social-thanks
-.social-icons {
-  list-style: none;
-}
-.social-thanks
-.text-header {
-  font-size: 45px;
-  line-height: 45px;
-}
-.social-thanks
-.text-sub {
-  color: #464646;
+.service .text-sub {
   font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(40,49,54);
+}
+.service .service-list {
+  list-style: none;
+}
+
+.about-us-details .text-header {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: rgb(0,0,0);
+}
+.about-us-details .text-sub {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(40,49,54);
+}
+.about-us-details .text-list {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgb(0,0,0);
+}
+.about-us-details .lists {
+  list-style: none;
+}
+.stats-block .stats {
+  list-style: none;
+}
+.stats-block .stats-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgb(0,0,0);
+}
+.stats .procent-numbers {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 10px;
+  color: rgb(0,0,0);
+}
+.stats .text-sub {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(40,49,54);
+}
+
+.clients .clients-list {
+  list-style: none;
+}
+
+.contact-info .text-header {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: rgb(0,0,0);
+}
+.contact-info .text-sub {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(102,102,102);
+}
+.contact-info .tel,
+.contact-info .tel:hover,
+.contact-info .tel:focus,
+.contact-info .tel:active {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(102,102,102);
+}
+
+.social-thanks .social-icons {
+  list-style: none;
+}
+
+.social-thanks .text-header {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  color: rgb(0,0,0);
+}
+.social-thanks .text-sub {
+  font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
+  color: rgb(68,68,68);
 }
