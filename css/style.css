@@ -248,7 +248,16 @@ input {
   outline: none;
 }
 :focus::-webkit-input-placeholder {
-  color: rgb(0,0,0);
+  color: rgb(68,68,68);
+}
+:focus:-ms-input-placeholder {
+  color: rgb(68,68,68);
+}
+:focus::-moz-placeholder {
+  color: rgb(68,68,68);
+}
+:focus:-moz-placeholder {
+  color: rgb(68,68,68);
 }
 .contact-form textarea:focus,
 input:focus {
