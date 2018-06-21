@@ -243,20 +243,23 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: rgb(68,68,68);
+  color: rgba(68,68,68,0.5);
   border: 2px solid rgb(215,220,222);
   outline: none;
+}
+.contact-form ::-webkit-input-placeholder {
+  color: rgba(68,68,68,0.5);
 }
 .contact-form :focus::-webkit-input-placeholder {
   color: rgb(68,68,68);
 }
-:focus:-ms-input-placeholder {
+.contact-form :focus:-ms-input-placeholder {
   color: rgb(68,68,68);
 }
-:focus::-moz-placeholder {
+.contact-form :focus::-moz-placeholder {
   color: rgb(68,68,68);
 }
-:focus:-moz-placeholder {
+.contact-form :focus:-moz-placeholder {
   color: rgb(68,68,68);
 }
 .contact-form textarea:focus,
@@ -264,6 +267,8 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+  color: rgb(68,68,68);
+  opacity: 0,5;
   border: 2px solid rgb(68,68,68);
 }
 .contact-form .user-email {
