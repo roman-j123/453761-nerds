@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+
+/*Кнопки*/
+
 .btn {
   background-color: rgb(256,86,90);
   font: inherit;
@@ -48,6 +51,19 @@ a {
 .yellow:active {
   background-color: rgb(229,167,34);
 }
+.gray {
+  background-color: rgb(238,238,238);
+  color: rgb(0,0,0);
+}
+.gray:hover,
+.gray:focus {
+  background-color: rgb(223,223,223);
+}
+.gray:active {
+  background-color: rgb(213,213,213);
+}
+
+/*Скрытие*/
 
 .visually-hidden {
   position: absolute;
@@ -59,6 +75,8 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*index - header*/
 
 .main-header {
   background-color: rgb(238,238,238);
@@ -91,6 +109,8 @@ a {
 .cart a:active {
   color: rgba(0,0,0,0.3);
 }
+
+/*index - slider*/
 
 .slider .slide-1 {
   background-color: rgb(238,238,238);
@@ -126,6 +146,8 @@ a {
   list-style: none;
 }
 
+/*index - Услуги*/
+
 .service h3 {
   font-size: 24px;
   font-weight: 600;
@@ -142,6 +164,8 @@ a {
 .service .service-list {
   list-style: none;
 }
+
+/*index - О компании*/
 
 .about-us-details .text-header {
   font-size: 45px;
@@ -188,9 +212,157 @@ a {
   color: rgb(40,49,54);
 }
 
+/*index - Клиенты*/
+
 .clients .clients-list {
   list-style: none;
 }
+
+/*catalog - header*/
+
+.main-header .page-header {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: rgb(0,0,0);
+  text-align: center;
+}
+
+/*catalog - фильтры*/
+
+.filter legend {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: rgb(0,0,0);
+}
+.filter fieldset {
+  border: 0 none;
+}
+.filter .price-field {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(40,49,54);
+}
+.filter .price-field input {
+  outline: none;
+  border: 2px solid rgb(215,220,222);
+}
+.filter .price-field input:focus {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(68,68,68);
+  opacity: 0,5;
+  border: 2px solid rgb(68,68,68);
+}
+.filter .price-input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(40,49,54);
+}
+.filter .price-input ::-webkit-input-placeholder {
+  color: rgb(40,49,54);
+}
+.filter .price-input :-ms-input-placeholder {
+  color: rgb(40,49,54);
+}
+.filter .price-input ::-moz-placeholder {
+  color: rgb(40,49,54);
+}
+.filter .price-input :-moz-placeholder {
+  color: rgb(40,49,54);
+}
+.filter .filter-option {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(40,49,54);
+  list-style: none;
+}
+.filter-option label:hover {
+  color: rgb(0,0,0);
+}
+.filter-option label:disabled {
+  color: rgba(40,49,54,0.3);
+}
+/*catalog - Список продуктов header*/
+
+.catalog-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: rgb(0,0,0);
+}
+.catalog-header .sort-list,
+.catalog-header .sort-updown {
+  list-style: none;
+}
+.catalog-header .sort-list a,
+.catalog-header .sort-updown a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+}
+.catalog-header .sort-list a:hover,
+.catalog-header .sort-updown a:hover,
+.catalog-header .sort-list a:focus,
+.catalog-header .sort-updown a:focus {
+  color: rgba(0,0,0,0.6);
+}
+.catalog-header .sort-list a:active,
+.catalog-header .sort-updown a:active {
+  color: rgb(0,0,0);
+}
+
+/*catalog - список продуктов*/
+
+.products .products-list {
+  list-style: none;
+}
+.products-list .product-item h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  color: rgb(0,0,0);
+  text-transform: uppercase;
+}
+.product-item .product-about p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(102,102,102);
+}
+
+/*catalog - кнопки*/
+
+.pages li {
+  list-style: none;
+  background-color: rgb(238,238.238);
+  display: inline;
+}
+.pages li a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: rgb(0,0,0);
+}
+.pages li a:hover {
+  background-color: rgb(223,223,223);
+}
+.pages li a:focus {
+  background-color: rgb(213,213,213);
+}
+.pages li a:active {
+  background-color: rgb(255,255,255);
+  border: 3px solid rgb(219,219,219);
+}
+.pages
+
+/*Контакты*/
 
 .contact-info .text-header {
   font-size: 18px;
@@ -215,6 +387,8 @@ a {
   color: rgb(102,102,102);
 }
 
+/*Кнопки социальных сетей*/
+
 .social-thanks .social-icons {
   list-style: none;
 }
@@ -232,6 +406,8 @@ a {
   color: rgb(68,68,68);
 }
 
+/*Форма обратной связи*/
+
 .contact-form .user-name {
   font-size: 16px;
   font-weight: 600;
@@ -248,6 +424,15 @@ a {
   outline: none;
 }
 .contact-form ::-webkit-input-placeholder {
+  color: rgba(68,68,68,0.5);
+}
+.contact-form :-ms-input-placeholder {
+  color: rgba(68,68,68,0.5);
+}
+.contact-form ::-moz-placeholder {
+  color: rgba(68,68,68,0.5);
+  }
+.contact-form :-moz-placeholder {
   color: rgba(68,68,68,0.5);
 }
 .contact-form :focus::-webkit-input-placeholder {

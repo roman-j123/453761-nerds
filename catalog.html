@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Студия Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,7 +21,7 @@
         <li><a href="#">Корзина</a></li>
       </ul>
     </nav>
-        <h1>Магазин готовых шаблонов</h1>
+        <h1 class="page-header">Магазин готовых шаблонов</h1>
     </header>
 
     <main>
@@ -35,11 +35,10 @@
                   <div class="line-value"></div>
                   <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
                 </div>
-              <label>От:
-                <input name="lower-value" type="text" value="0">
-              </label>
-              <label>До:
-                <input name="higher-value" type="text" value="15000">
+              <label class="price-field">От:
+                <input name="lower-value" class="price-input" type="text" value="0"></label>
+              <label class="price-field">До:
+                <input name="higher-value" class="price-input" type="text" value="15000">
               </label>
           </div>
         </fieldset>
@@ -113,7 +112,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-pink.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
-                  <div>
+                  <div class="product-about">
                     <a href="product-card.html"><h2>Pink App</h2></a>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Pink за ">9900 руб.</a>
@@ -121,7 +120,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон сайта Borodinski">
-                  <div>
+                  <div class="product-about">
                     <a href="product-card.html"><h2>Barbershop</h2></a>
                     <p>Сайт салона красоты. Для мужчин, да.</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Barbershop за">9900 руб.</a>
@@ -129,7 +128,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон сайта Mishka">
-                  <div>
+                  <div class="product-about">
                     <a href="product-card.html"><h2>Mishka</h2></a>
                     <p>Интернет-магазин вязаных игрушек</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Mishka за">9900 руб.</a>
@@ -137,7 +136,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон сайта Study">
-                  <div>
+                  <div class="product-about">
                     <a href="product-card.html"><h2>A Plus</h2></a>
                     <p>Лендинг курсов повышения квалификации</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон Study за ">9900 руб.</a>
@@ -145,7 +144,7 @@
                 </li>
                 <li class="product-item">
                   <img src="img/products/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
-                  <div>
+                  <div class="product-about">
                     <a href="product-card.html"><h2>KBACT</h2></a>
                     <p>Промо-сайт производителя крафтового кваса</p>
                     <a href="#" class="btn" aria-label="Положить в корзину шаблон сайта Kvast за ">9900 руб.</a>
@@ -170,10 +169,10 @@
       <section class="contact-map">
         <img src="img/map_d.jpg" width="1440" height="416" alt="Карта">
         <div class="contact-info">
-          <h2 class="contact-info header">Nerds design studio</h2>
-          <p class="contact-info text">191186, Санкт-Петербург,<br>
+          <h2 class="text-header">Nerds design studio</h2>
+          <p class="text-sub">191186, Санкт-Петербург,<br>
             ул, Б.Конюшенная д.19/8</p>
-            <a href="tel:+78122757575" aria-label="Позвонить нам по телефону">тел. +7(812) 275-75-75</a>
+            <a href="tel:+78122757575" class="tel" aria-label="Позвонить нам по телефону">тел. +7(812) 275-75-75</a>
           <a href="modal.html" class="btn">Напишите нам</a>
         </div>
       </section>
@@ -183,20 +182,21 @@
         <button class="modal-close" type="button">Закрыть</button>
           <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label for="user-name">Ваше имя:</label>
+              <label for="user-name" class="user-name">Ваше имя:</label>
               <input class="input-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="user-email">Ваш e-mail:</label>
+              <label for="user-email" class="user-email">Ваш e-mail:</label>
               <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
             </p>
             <p>
-              <label>Текст письма:<br>
-              <textarea placeholder="В свободной форме"></textarea></label>
+              <label class="user-text">Текст письма:<br>
+              <textarea placeholder="В свободной форме" class="input-text"></textarea></label>
             </p>
             <button type="submit" class="btn" value="Отправить">Отправить</button>
           </form>
       </section>
+
 
       <section class="social-thanks">
         <ul class="social-icons">
