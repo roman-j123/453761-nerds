@@ -9,31 +9,41 @@
   </head>
   <body>
     <header class="main-header">
-      <a><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
-      <h1 class="visually-hidden">Студия Нёрдс</h1>
-      <nav class="main-nav">
-        <ul class="main-links">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      <ul class="cart">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-      <section class="slider">
-        <div class="slide-1">
-          <p class="text-header">Долго, дорого, скурпулезно.</p>
-          <p class="text-sub">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#" class="btn">Узнать больше</a>
+      <div class="center">
+      <div class="menu-wrapper">
+        <div class="block-logo">
+        <a><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
         </div>
-        <div class="slide-2">
+        <h1 class="visually-hidden">Студия Нёрдс</h1>
+          <div class="main-nav block-menu">
+            <ul class="main-links">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="main-nav block-cart">
+            <ul class="cart">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+    </div>
+      <section class="slider">
+        <div class="slider-wrapper">
+        <div class="slide-1">
+          <div class="block-slider">
+            <p class="text-header">Долго, дорого, скрупулезно.</p>
+            <p class="text-sub">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            <a href="#" class="btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="slide-2 visually-hidden">
           <p class="text-header">Любим математику как никто другой.</p>
           <p class="text-sub">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
           <a href="#" class="btn">Узнать больше</a>
         </div>
-        <div class="slide-3">
+        <div class="slide-3 visually-hidden">
           <p class="text-header">Только ночь, только хардкор.</p>
           <p class="text-sub">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
           <a href="#" class="btn">Узнать больше</a>
@@ -46,33 +56,41 @@
           </ul>
         </div>
       </section>
+      </div>
+    </div>
     </header>
 
     <main>
       <section class="service">
-        <ul class="service-list">
-          <li class="service-item">
+        <div class="center">
+        <div class="service-wrapper">
+          <div class="service-list">
+            <div class="service-item">
             <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p class="text-sub">Мир никогда не будет прежним после того как увидит ваш сайт</p>
             <a href="#" class="btn red" aria-label="Заказать у нас сайт">Заказать</a>
-          </li>
-          <li class="service-item">
+          </div>
+          <div class="service-item">
             <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
             <p class="text-sub">Покорите Топ-10 приложений в AppStore и Google Play</p>
             <a href="#" class="btn green" aria-label="Заказать у нас приложение">Заказать</a>
-          </li>
-          <li class="service-item">
+          </div>
+          <div class="service-item">
             <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
             <p class="text-sub">Вы даже не подозреваете, на сколько вы изумительны!</p>
             <a href="#" class="btn yellow" aria-label="Заказать у нас презентацию">Заказать</a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        </div>
+      </div>
       </section>
 
       <section class="about-us">
+        <div class="center">
+        <div class="about-wrapper">
         <div class="about-us-details">
           <p class="text-header">Мы - маленькая, но гордая дизайн студия из Краснодара.</p>
           <p class="text-sub">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покадая рук, как роботы.</p>
@@ -101,9 +119,13 @@
             </li>
           </ul>
         </div>
+      </div>
+      </div>
       </section>
 
       <section class="clients">
+        <div class="center">
+        <div class="clients-wrapper">
         <ul class="clients-list">
           <li class="clients-item">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -126,6 +148,8 @@
             </a>
           </li>
         </ul>
+      </div>
+      </div>
       </section>
     </main>
 
