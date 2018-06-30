@@ -225,12 +225,18 @@ ul.cart {
 }
 
 .slider .slider-text-block {
-  width: 380px;
+  width: 520px;
 }
 
 
 .slider-buttons .buttons-list {
   list-style: none;
+}
+
+ul.buttons-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 /*index - Услуги*/
@@ -248,12 +254,34 @@ ul.cart {
   line-height: 24px;
   color: rgb(40,49,54);
 }
+ul.service-list {
+  padding: 0;
+  margin: 0;
+}
+p.text-header {
+  margin: 0;
+}
 .service .service-list {
   list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.service-list .service-item {
+  width: 300px;
+  padding-right: 100px;
 }
 
 /*index - О компании*/
-
+.about-us-details {
+  width: 660px;
+  padding-right: 140px;
+}
+.about-us .wrapper {
+  border-top: 4px solid rgb(238,238,238);
+  padding-top: 40px;
+}
 .about-us-details .text-header {
   font-size: 45px;
   font-weight: 500;
@@ -276,8 +304,20 @@ ul.cart {
 .about-us-details .lists {
   list-style: none;
 }
+ul.stats {
+  padding: 0;
+  margin: 0;
+}
+.stats .stats-item {
+  width: 100px;
+  padding-right: 25px;
+}
+.stats .stats-item:nth-last-child(1) {
+  padding-right: 0;
+}
 .stats-block .stats {
   list-style: none;
+  display: flex;
 }
 .stats-block .stats-title {
   font-size: 16px;
