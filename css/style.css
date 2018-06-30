@@ -124,7 +124,7 @@ a {
   color: rgb(0,0,0);
   padding: 0;
   margin-top: 10px;
-  margin-left: auto;
+  margin-left: 200px;
 }
 
 .cart-block {
@@ -143,11 +143,11 @@ a {
   list-style: none;
   justify-content: space-between;
 }
-ul.main-links {
+.main-links {
   padding-left: 0;
   margin-left: 0;
 }
-ul.cart {
+.cart {
   padding: 0;
 }
 
@@ -178,6 +178,9 @@ ul.cart {
 
 .main-links li:nth-last-child(1) a {
   padding-right: 0;
+}
+.main-links li:first-child a {
+  padding-left: 0;
 }
 .cart li a {
   padding-right: 0;
@@ -233,7 +236,7 @@ ul.cart {
   list-style: none;
 }
 
-ul.buttons-list {
+.buttons-list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -254,11 +257,11 @@ ul.buttons-list {
   line-height: 24px;
   color: rgb(40,49,54);
 }
-ul.service-list {
+.service-list {
   padding: 0;
   margin: 0;
 }
-p.text-header {
+.about-us-details .text-header {
   margin: 0;
 }
 .service .service-list {
@@ -270,17 +273,19 @@ p.text-header {
 }
 .service-list .service-item {
   width: 300px;
-  padding-right: 100px;
+  margin-right: 100px;
 }
 
 /*index - О компании*/
 .about-us-details {
   width: 660px;
-  padding-right: 140px;
+  margin-right: 140px;
 }
 .about-us .wrapper {
   border-top: 4px solid rgb(238,238,238);
   padding-top: 40px;
+  border-bottom: 4px solid rgb(238,238,238);
+  padding-bottom: 75px;
 }
 .about-us-details .text-header {
   font-size: 45px;
@@ -289,22 +294,30 @@ p.text-header {
   color: rgb(0,0,0);
 }
 .about-us-details .text-sub {
+  margin-top: 35px;
+  margin-bottom: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(40,49,54);
 }
 .about-us-details .text-list {
+  margin: 0;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
   color: rgb(0,0,0);
 }
+.lists li {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .about-us-details .lists {
   list-style: none;
 }
-ul.stats {
+.stats {
   padding: 0;
   margin: 0;
 }
@@ -342,8 +355,18 @@ ul.stats {
 /*index - Клиенты*/
 
 .clients .clients-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  border-bottom: 4px solid rgb(238,238,238);
 }
+.clients .clients-item {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 
 /*catalog - header*/
 
@@ -487,9 +510,11 @@ ul.stats {
   background-color: rgb(255,255,255);
   border: 3px solid rgb(219,219,219);
 }
-.pages
 
 /*Контакты*/
+.contact-map {
+  padding-top: 80px;
+}
 
 .contact-info .text-header {
   font-size: 18px;
@@ -516,17 +541,24 @@ ul.stats {
 
 /*Кнопки социальных сетей*/
 
+.social-thanks {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .social-thanks .social-icons {
   list-style: none;
+  margin-right: 140px;
 }
 
 .social-thanks .text-header {
+  margin: 0;
   font-size: 36px;
   font-weight: 600;
   line-height: 36px;
   color: rgb(0,0,0);
 }
 .social-thanks .text-sub {
+  margin-top: 13px;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
