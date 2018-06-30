@@ -365,8 +365,21 @@ a {
 .clients .clients-item {
   padding-top: 60px;
   padding-bottom: 60px;
+  align-self: center;
 }
 
+.clients .clients-item a {
+  opacity: 0.2;
+  outline: none;
+}
+.clients .clients-item a:hover {
+  opacity: 1;
+  outline: none;
+}
+.clients .clients-item a:active {
+  opacity: 0.1;
+  outline: none;
+}
 
 /*catalog - header*/
 
