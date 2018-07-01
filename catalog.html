@@ -9,22 +9,33 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
-      <nav class="main-nav">
-        <ul class="main-links">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      <ul class="cart">
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+      <div class="center">
+        <div class="wrapper">
+          <div class="logo-block">
+            <a href="index.html"><img src="img/logo.svg" width="160" height="65" alt="Студия Нёрдс"></a>
+            <h1 class="visually-hidden">Студия Нёрдс</h1>
+          </div>
+          <div class="navigation-block">
+            <ul class="main-links">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        <div class="cart-block">
+          <ul class="cart">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
         <h1 class="page-header">Магазин готовых шаблонов</h1>
     </header>
 
     <main>
+      <div class="center">
+        <div class="wrapper">
       <section class="menu">
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -87,8 +98,10 @@
       </section>
 
       <section class="catalog">
-        <header class="catalog-header">
+        <div class="catalog-header">
+            <div class="header-block">
             <h2>Сортировать:</h2>
+          </div>
               <ul class="sort-list">
                 <li class="sort-item"><a href="#" aria-label="Сортировать по цене">По цене</a></li>
                 <li class="sort-item"><a href="#" aria-label="Сортировать по типу">По типу</a></li>
@@ -98,7 +111,7 @@
                 <li class="sort-item-up"><a href="#" aria-label="Сортировать по возрастанию">По возрастанию</a></li>
                 <li class="sort-item-down"><a href="#" aria-label="Сортировать по убыванию">По убыванию</a></li>
               </ul>
-            </header>
+          </div>
 
             <div class="products">
               <ul class="products-list">
@@ -163,6 +176,8 @@
             </footer>
 
       </section>
+    </div>
+    </div>
     </main>
 
     <footer>
@@ -199,13 +214,21 @@
 
 
       <section class="social-thanks">
+        <div class="center">
+          <div class="wrapper">
+        <div class="social-block">
         <ul class="social-icons">
-          <li class="social-icons-item vk"><a href="https://vk.com/"><span class="visually-hidden">Наша страница В Контакте</span></a></li>
-          <li class="social-icons-item fb"><a href="https://facebook.com"><span class="visually-hidden">Наша страница на Facebook</span></a></li>
-          <li class="social-icons-item inst"><a href="https://instagram.com"><span class="visually-hidden">Наша страница в Instagram</span></a></li>
+          <li class="social-icons-item"><a href="https://vk.com/" class="vk"><span class="visually-hidden">Наша страница В Контакте</span></a></li>
+          <li class="social-icons-item fb"><a href="https://facebook.com" class="fb"><span class="visually-hidden">Наша страница на Facebook</span></a></li>
+          <li class="social-icons-item inst"><a href="https://instagram.com" class="inst"><span class="visually-hidden">Наша страница в Instagram</span></a></li>
         </ul>
+        </div>
+        <div class="footer-text">
         <p class="text-header">Давайте дружить, это выгодно!</p>
         <p class="text-sub">Скидка 10% процентов для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </div>
       </section>
     </footer>
   </body>

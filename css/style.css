@@ -249,7 +249,7 @@ a {
 
 .service h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: rgb(0,0,0);
@@ -307,7 +307,7 @@ a {
 .about-us-details .text-list {
   margin: 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
   color: rgb(0,0,0);
@@ -337,14 +337,14 @@ a {
 }
 .stats-block .stats-title {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
   color: rgb(0,0,0);
 }
 .stats .procent-numbers {
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 10px;
   color: rgb(0,0,0);
 }
@@ -387,22 +387,36 @@ a {
 /*catalog - header*/
 
 .main-header .page-header {
+  margin: 0;
+  padding-top: 115px;
+  padding-bottom: 115px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   color: rgb(0,0,0);
   text-align: center;
+
 }
 
 /*catalog - фильтры*/
+.menu {
+  padding-top: 60px;
+  min-width: 260px;
+  margin-right: 140px;
+}
 
+.menu ul {
+  padding: 0;
+}
 .filter legend {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   color: rgb(0,0,0);
 }
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: 0 none;
 }
 .filter .price-field {
@@ -412,6 +426,7 @@ a {
   color: rgb(40,49,54);
 }
 .filter .price-field input {
+  width: 80px;
   outline: none;
   border: 2px solid rgb(215,220,222);
 }
@@ -454,17 +469,36 @@ a {
 .filter-option label:disabled {
   color: rgba(40,49,54,0.3);
 }
-/*catalog - Список продуктов header*/
 
-.catalog-header h2 {
+/*catalog - Список продуктов header*/
+.catalog {
+    width: 760px;
+}
+.catalog-header {
+  padding-top: 60px;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header-block h2 {
+  margin: 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: rgb(0,0,0);
 }
 .catalog-header .sort-list,
 .catalog-header .sort-updown {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sort-list li {
+  display: inline-block;
+}
+.sort-updown li {
+  display: inline-block;
 }
 .catalog-header .sort-list a,
 .catalog-header .sort-updown a {
@@ -488,10 +522,22 @@ a {
 
 .products .products-list {
   list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-list .product-item {
+  width: 360px;
+  margin-right: 20px;
+}
+.products-list .product-item:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 20px;
 }
 .products-list .product-item h2 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   color: rgb(0,0,0);
   text-transform: uppercase;
@@ -537,7 +583,7 @@ a {
 }
 .contact-info .text-header {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: rgb(0,0,0);
@@ -576,7 +622,7 @@ a {
 .social-thanks .text-header {
   margin: 0;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 36px;
   color: rgb(0,0,0);
 }
@@ -624,20 +670,16 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.social-icons-item .vk:active {
+
+.social-icons-item a:active {
   opacity: 0.3;
 }
-.social-icons-item .fb:active {
-  opacity: 0.3;
-}
-.social-icons-item .inst:active {
-  opacity: 0.3;
-}
+
 /*Форма обратной связи*/
 
 .contact-form .user-name {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: rgb(0,0,0);
 }
@@ -685,7 +727,7 @@ a {
 }
 .contact-form .user-email {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: rgb(0,0,0);
 }
@@ -694,7 +736,7 @@ a {
 }
 .contact-form .user-text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 18px;
   color: rgb(0,0,0);
 }
