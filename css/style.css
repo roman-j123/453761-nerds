@@ -400,13 +400,16 @@ a {
 
 /*catalog - фильтры*/
 .menu {
-  padding-top: 60px;
+  margin-top: 60px;
   min-width: 260px;
   margin-right: 140px;
 }
 
 .menu ul {
   padding: 0;
+}
+.filter .first {
+  margin-bottom: 56px;
 }
 .filter legend {
   font-size: 18px;
@@ -472,13 +475,13 @@ a {
 
 /*catalog - Список продуктов header*/
 .catalog {
-    width: 760px;
+  width: 760px;
 }
 .catalog-header {
-  padding-top: 60px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   margin-right: 0;
   display: flex;
-  justify-content: space-between;
 }
 .header-block h2 {
   margin: 0;
@@ -486,6 +489,11 @@ a {
   font-weight: 700;
   line-height: 18px;
   color: rgb(0,0,0);
+}
+
+.sort-block {
+  margin-left: auto;
+  display: flex;
 }
 .catalog-header .sort-list,
 .catalog-header .sort-updown {
@@ -500,12 +508,19 @@ a {
 .sort-updown li {
   display: inline-block;
 }
+
 .catalog-header .sort-list a,
 .catalog-header .sort-updown a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: rgba(0,0,0,0.3);
+  padding-right: 25px;
+  text-transform: uppercase;
+}
+
+.catalog-header .sort-updown li:nth-last-child(1) a {
+  padding-right: 0;
 }
 .catalog-header .sort-list a:hover,
 .catalog-header .sort-updown a:hover,
@@ -529,11 +544,18 @@ a {
 }
 .products-list .product-item {
   width: 360px;
-  margin-right: 20px;
+  margin-bottom: 60px;
 }
 .products-list .product-item:nth-child(2n) {
   margin-right: 0;
-  margin-left: 20px;
+  margin-left: 40px;
+}
+.product-about {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 43px;
+  background-color: rgb(238,238,238);
 }
 .products-list .product-item h2 {
   font-size: 18px;
@@ -541,20 +563,36 @@ a {
   line-height: 30px;
   color: rgb(0,0,0);
   text-transform: uppercase;
+  text-align: center;
 }
 .product-item .product-about p {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: rgb(102,102,102);
+  text-align: center;
+}
+.product-about .btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 
 /*catalog - кнопки*/
-
+.pages {
+  padding: 0;
+}
 .pages li {
+  width: 50px;
+  height: 50px;
   list-style: none;
-  background-color: rgb(238,238.238);
-  display: inline;
+  background-color: rgb(238,238,238);
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+}
+.pages li:nth-last-child(1){
+  width: auto;
 }
 .pages li a {
   font-size: 16px;
@@ -562,16 +600,20 @@ a {
   line-height: 18px;
   color: rgb(0,0,0);
 }
-.pages li a:hover {
+.pages li:hover,
+.pages li button:hover {
   background-color: rgb(223,223,223);
 }
-.pages li a:focus {
+.pages li:focus,
+.pages li button:focus {
   background-color: rgb(213,213,213);
 }
-.pages li a:active {
+.pages li:active,
+.pages li button:active {
   background-color: rgb(255,255,255);
   border: 3px solid rgb(219,219,219);
 }
+
 
 /*Контакты*/
 .contact-map {
