@@ -587,10 +587,9 @@ a {
   line-height: 22px;
   color: rgb(68,68,68);
 }
+
 .social-icons .social-icons-item {
   background-color: rgb(225,225,225);
-  width: 80px;
-  height: 80px;
   border-radius: 50%;
   margin-right: 12px;
   margin-top: 0;
@@ -605,7 +604,12 @@ a {
 .social-icons .social-icons-item:active {
   background-color: rgb(215,55,59);
 }
-.social-icons-item .vk {
+.social-icons-item a {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.social-icons-item a .vk {
   background-image: url("img/vk-icon.svg");
 }
 .social-icons-item .fb {
