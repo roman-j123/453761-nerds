@@ -609,14 +609,29 @@ a {
   width: 80px;
   height: 80px;
 }
-.social-icons-item a .vk {
-  background-image: url("img/vk-icon.svg");
+.social-icons-item .vk {
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .social-icons-item .fb {
-  background-image: url("img/fb-icon.svg");
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .social-icons-item .inst {
-  background-image: url("img/insta-icon.svg");
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social-icons-item .vk:active {
+  opacity: 0.3;
+}
+.social-icons-item .fb:active {
+  opacity: 0.3;
+}
+.social-icons-item .inst:active {
+  opacity: 0.3;
 }
 /*Форма обратной связи*/
 
