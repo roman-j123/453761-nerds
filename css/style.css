@@ -139,19 +139,22 @@ a {
 
 .main-links,
 .cart {
-  display: flex;
   list-style: none;
-  justify-content: space-between;
 }
 .main-links {
   padding-left: 0;
   margin-left: 0;
+}
+.main-links li {
+  display: inline-block;
 }
 .cart {
   padding: 0;
 }
 
 .main-links a {
+  width: 100px;
+  background-color: rgb(238,238,238);
   color: rgb(0,0,0);
   padding-left: 20px;
   padding-right: 20px;
@@ -529,6 +532,9 @@ a {
   padding-top: 80px;
 }
 
+.contact-map img {
+  width: 100%;
+}
 .contact-info .text-header {
   font-size: 18px;
   font-weight: 600;
@@ -560,7 +566,11 @@ a {
 }
 .social-thanks .social-icons {
   list-style: none;
+  display: flex;
+  padding-left: 0;
   margin-right: 140px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .social-thanks .text-header {
@@ -577,7 +587,33 @@ a {
   line-height: 22px;
   color: rgb(68,68,68);
 }
-
+.social-icons .social-icons-item {
+  background-color: rgb(225,225,225);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.social-icons .social-icons-item:nth-last-child(1) {
+  margin-right: 0;
+}
+.social-icons .social-icons-item:hover {
+  background-color: rgb(231,66,70);
+}
+.social-icons .social-icons-item:active {
+  background-color: rgb(215,55,59);
+}
+.social-icons-item .vk {
+  background-image: url("img/vk-icon.svg");
+}
+.social-icons-item .fb {
+  background-image: url("img/fb-icon.svg");
+}
+.social-icons-item .inst {
+  background-image: url("img/insta-icon.svg");
+}
 /*Форма обратной связи*/
 
 .contact-form .user-name {
