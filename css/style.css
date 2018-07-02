@@ -23,6 +23,9 @@ a {
   vertical-align: middle;
   color: rgb(255,255,255);
   border: none;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .btn:hover,
 .btn:focus{
@@ -128,13 +131,26 @@ a {
 }
 
 .cart-block {
+  position: relative;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
   color: rgb(0,0,0);
- margin-top: 10px;
- margin-left: auto;
+  margin-top: 10px;
+  margin-left: auto;
+}
+.cart-block:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .main-links,
@@ -147,23 +163,29 @@ a {
 }
 .main-links li {
   display: inline-block;
+  vertical-align: top;
 }
 .cart {
   padding: 0;
 }
-
+.main-links li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .main-links a {
   width: 100px;
   background-color: rgb(238,238,238);
   color: rgb(0,0,0);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 10px;
 }
-
+.main-links .use-link {
+  border-bottom: 2px solid rgb(251,86,90);
+}
 .cart a {
   color: rgb(0,0,0);
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 .main-links a:hover,
 .cart a:hover {
@@ -193,24 +215,29 @@ a {
 .slider {
   margin-top: 20px;
 }
-
 .slider .slide-1 {
+  display: block;
   background-color: rgb(238,238,238);
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
+  min-height: 410px;
 }
 .slider .slide-2 {
+  display: none;
   background-color: rgb(238,238,238);
   background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
+  min-height: 410px;
 }
 .slider .slide-3 {
+  display: none;
   background-color: rgb(238,238,238);
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right top;
+  min-height: 410px;
 }
 .slider .text-header {
   margin: 0;
@@ -504,9 +531,11 @@ a {
 
 .sort-list li {
   display: inline-block;
+  vertical-align: top;
 }
 .sort-updown li {
   display: inline-block;
+  vertical-align: top;
 }
 
 .catalog-header .sort-list a,
@@ -583,13 +612,15 @@ a {
   padding: 0;
 }
 .pages li {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   list-style: none;
   background-color: rgb(238,238,238);
   display: inline-block;
   text-align: center;
   border-radius: 3px;
+  border: 2px solid rgb(238,238,238);
+
 }
 .pages li:nth-last-child(1){
   width: auto;
@@ -603,15 +634,18 @@ a {
 .pages li:hover,
 .pages li button:hover {
   background-color: rgb(223,223,223);
+  border: 2px solid rgb(223,223,223);
 }
 .pages li:focus,
 .pages li button:focus {
   background-color: rgb(213,213,213);
+  border: 2px solid rgb(213,213,213);
 }
 .pages li:active,
 .pages li button:active {
   background-color: rgb(255,255,255);
-  border: 3px solid rgb(219,219,219);
+  border: 2px solid rgb(219,219,219);
+
 }
 
 
