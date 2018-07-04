@@ -198,6 +198,7 @@ a {
 }
 
 .main-links .use-link {
+  padding-bottom: 8px;
   border-bottom: 2px solid rgb(251,86,90);
 }
 .cart-block {
@@ -520,30 +521,6 @@ a {
   background-repeat: no-repeat no-repeat;
   background-position: right, 0 0;
 }
-.clients .clients-item:nth-last-child(1) {
-  background-image: none;
-}
-.clients .clients-item:nth-last-child(1) a {
-  background-image: none;
-  padding-top: 5px;
-  width: 280px;
-  height: 180px;
-}
-.clients .clients-item:nth-last-child(2) a {
-  width: 280px;
-  height: 180px;
-}
-.clients .clients-item:nth-last-child(3) a {
-  padding-bottom: 1px;
-  width: 280px;
-  height: 180px;
-}
-.clients .clients-item:nth-last-child(4) a {
-  padding-left: 0;
-  padding-top: 10px;
-  width: 260px;
-  min-height: 180px;
-}
 .clients .clients-item a {
   width: 100%;
   display: flex;
@@ -555,7 +532,32 @@ a {
   outline: none;
   box-sizing: border-box;
 }
+.clients .clients-item:nth-last-child(1) {
+  background-image: none;
+}
+.clients .clients-item:nth-child(1) a {
+  padding-left: 0;
+  padding-top: 10px;
+  width: 260px;
+  min-height: 180px;
+}
+.clients .clients-item:nth-child(2) a {
+  padding-bottom: 1px;
+  width: 280px;
+  height: 180px;
+}
 
+.clients .clients-item:nth-child(3) a {
+  width: 280px;
+  height: 180px;
+}
+
+.clients .clients-item:nth-child(4) a {
+  background-image: none;
+  padding-top: 5px;
+  width: 280px;
+  height: 180px;
+}
 /*.clients .clients-item:nth-last-child(1) a {
   padding-left: 30px;
   margin-right: 49px;
@@ -573,8 +575,8 @@ a {
 
 .main-header .page-header {
   margin: 0;
-  padding-top: 115px;
-  padding-bottom: 115px;
+  padding-top: 70px;
+  padding-bottom: 110px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -585,7 +587,7 @@ a {
 
 /*catalog - фильтры*/
 .menu {
-  margin-top: 60px;
+  margin-top: 55px;
   min-width: 260px;
   margin-right: 140px;
 }
@@ -594,55 +596,27 @@ a {
   padding: 0;
 }
 .filter .first {
-  margin-bottom: 56px;
+  text-transform: uppercase;
+  margin-bottom: 45px;
 }
 .filter legend {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: rgb(0,0,0);
+  text-transform: uppercase;
+
+  margin-bottom: 15px;
 }
 .filter fieldset {
   margin: 0;
   padding: 0;
   border: 0 none;
 }
-.filter .price-field {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  color: rgb(40,49,54);
-}
-.filter .price-field input {
-  width: 80px;
-  outline: none;
-  border: 2px solid rgb(215,220,222);
-}
-.filter .price-field input:focus {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  color: rgb(68,68,68);
-  opacity: 0,5;
-  border: 2px solid rgb(68,68,68);
-}
-.filter .price-input {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  color: rgb(40,49,54);
-}
-.filter .price-input ::-webkit-input-placeholder {
-  color: rgb(40,49,54);
-}
-.filter .price-input :-ms-input-placeholder {
-  color: rgb(40,49,54);
-}
-.filter .price-input ::-moz-placeholder {
-  color: rgb(40,49,54);
-}
-.filter .price-input :-moz-placeholder {
-  color: rgb(40,49,54);
+
+.filter ul {
+  margin: 0;
+  padding: 0;
 }
 .filter .filter-option {
   font-size: 16px;
@@ -650,6 +624,83 @@ a {
   line-height: 20px;
   color: rgb(40,49,54);
   list-style: none;
+
+
+  margin-bottom: 15px;
+  padding-left: 35px;
+}
+
+.filter-option label {
+  position: relative;
+  padding-top: 3px;
+
+  display: block;
+
+  user-select: none;
+}
+.grid-block {
+  margin-bottom: 45px;
+}
+.feat-block {
+  margin-bottom: 45px;
+}
+.filter-radio + label::after {
+  content: "";
+
+  position: absolute;
+  width: 17px;
+  height: 17px;
+
+  left: -34px;
+  top: 0;
+
+  border: 4px solid #000000;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.filter-radio:checked + label::before {
+  content: "";
+
+  position: absolute;
+  width: 9px;
+  height: 9px;
+
+  left: -26px;
+  top: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+
+  opacity: 0.4;
+}
+.filter-input-checkbox + label::after {
+  content: "";
+
+  position: absolute;
+  width: 19px;
+  height: 19px;
+
+  left: -32px;
+  top: 0;
+
+  border: 2px solid #000000;
+  border-radius: 3px;
+  opacity: 0.4;
+}
+.filter-input-checkbox:checked + label::before {
+  content: "";
+
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top: 0;
+  left: -32px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 .filter-option label:hover {
   color: rgb(0,0,0);
@@ -657,7 +708,84 @@ a {
 .filter-option label:disabled {
   color: rgba(40,49,54,0.3);
 }
+.range-filter {
+  width: 260px;
+  margin-bottom: 55px;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
 
+  border-radius: 5px;
+
+  background-color: #f1f1f1;
+}
+.range-controls .scale {
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #ababab;
+
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .lower {
+  left: 18px;
+}
+.range-controls .higher {
+  left: 160px;
+}
+.price-controls {
+  font-size: 0;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.price-controls input {
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  outline: none;
+}
+
+.higher-value {
+  text-align: right;
+}
 /*catalog - Список продуктов header*/
 .catalog {
   width: 760px;

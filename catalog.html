@@ -40,58 +40,67 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend class="first">Стоимость:</legend>
-              <div class="price-wrap">
-                <div class="price-line">
-                  <button class="price-lower" type="button" aria-label="Минимальная цена"></button>
-                  <div class="line-value"></div>
-                  <button class="price-higher" type="button" aria-label="Максимальная цена"></button>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                <div class="toggle lower"></div>
+                <div class="toggle higher"></div>
+              </div>
+                <div class="price-controls">
+                <label class="lower-value">От:
+                  <input name="lower-value" class="price-input" type="text" value="0">
+                </label>
+                <label class="higher-value">До:
+                  <input name="higher-value" class="price-input" type="text" value="15000">
+                </label>
                 </div>
-              <label class="price-field">От:
-                <input name="lower-value" class="price-input" type="text" value="0"></label>
-              <label class="price-field">До:
-                <input name="higher-value" class="price-input" type="text" value="15000">
-              </label>
-          </div>
-        </fieldset>
+            </div>
+          </fieldset>
           <fieldset>
+            <div class="grid-block">
             <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="adapt" id="filter-adapt" checked>
+                  <input type="radio" name="pattern-group" value="adapt" id="filter-adapt" class="filter-radio visually-hidden" checked>
                   <label for="filter-adapt">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="fixed" id="filter-fixed">
+                  <input type="radio" name="pattern-group" value="fixed" id="filter-fixed" class="filter-radio visually-hidden">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="rubber" id="filter-rubber">
+                  <input type="radio" name="pattern-group" value="rubber" id="filter-rubber" class="filter-radio visually-hidden">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
+            </div>
           </fieldset>
 
           <fieldset>
+            <div class="feat-block">
             <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="filter-input-checkbox" type="checkbox" name="slider" id="slider-check" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="slider-check" checked>
                   <label for="slider-check">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input-checkbox" type="checkbox" name="advantage" id="advant-check">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantage" id="advant-check">
                   <label for="advant-check">Блок преимуществ</label></li>
                 <li class="filter-option">
-                  <input class="filter-input-checkbox" type="checkbox" name="news" id="news-check" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="news-check" checked>
                   <label for="news-check">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input-checkbox" type="checkbox" name="gallery" id="gal-check">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="gal-check">
                   <label for="gal-check">Галерея</label></li>
                 <li class="filter-option">
-                  <input class="filter-input-checkbox" type="checkbox" name="cart" id="cart-check">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="cart" id="cart-check">
                   <label for="cart-check">Корзина</label></li>
               </ul>
+            </div>
           </fieldset>
           <button type="submit" class="btn gray">Показать</button>
         </form>
