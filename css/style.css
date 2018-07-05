@@ -525,7 +525,8 @@ a {
   border-top: 2px solid rgb(238,238,238);
   border-bottom: 2px solid rgb(238,238,238);
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 80px;
 }
 .clients .clients-item {
   background-image: url("../img/div.png");
@@ -805,6 +806,7 @@ a {
 /*catalog - Список продуктов header*/
 .catalog {
   width: 760px;
+  margin-bottom: 59px;
 }
 .catalog-header {
   margin-top: 55px;
@@ -1011,10 +1013,6 @@ a {
   box-sizing: border-box;
 }
 /*Контакты*/
-.contact-map {
-  padding-top: 60px;
-}
-
 .contact-map img {
   min-width: 1200px;
   display: block;
