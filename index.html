@@ -190,13 +190,14 @@
       </section>
     </footer>
 
-    <section class="modal-form">
+    <section class="modal-form visually-hidden">
       <div class="modal">
         <div class="modal-header">
           <h2>Напишите нам</h2>
           <button class="modal-close" type="button">Закрыть</button>
         </div>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="flex-block">
           <div class="block-name">
             <label for="user-name" class="user-name">Ваше имя:</label><br>
             <input class="input-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
@@ -206,7 +207,7 @@
             <label for="user-email" class="user-email">Ваш e-mail:</label><br>
             <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
           </div>
-
+        </div>
           <div class="block-text">
           <label class="user-text">Текст письма:
           <textarea placeholder="В свободной форме" class="input-text"></textarea></label>

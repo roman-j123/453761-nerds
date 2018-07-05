@@ -10,9 +10,10 @@ body {
   min-width: 1200px;
 }
 a {
-  text-decoration: none;
   margin: 0;
   padding: 0;
+
+  text-decoration: none;
 }
 
 /*Кнопки*/
@@ -219,7 +220,7 @@ a {
 }
 
 .main-links .use-link {
-  padding-bottom: 8px;
+  padding-bottom: 2px;
   border-bottom: 2px solid rgb(251,86,90);
 }
 .cart-block {
@@ -265,7 +266,7 @@ a {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 1;
 
   width: 160px;
   height: 18px;
@@ -597,7 +598,7 @@ a {
 
 .main-header .page-header {
   margin: 0;
-  padding-top: 60px;
+  padding-top: 66px;
   padding-bottom: 110px;
   font-size: 55px;
   font-weight: 500;
@@ -695,9 +696,15 @@ a {
 
   opacity: 0.4;
 }
+
 .filter-radio:hover +label::after,
 .filter-radio:hover +label::before {
   opacity: 1;
+}
+.filter-radio:disabled + label::after,
+.filter-radio:disabled + label::before,
+.filter-radio:disabled + label {
+  opacity: 0.3;
 }
 .filter-input-checkbox + label::after {
   content: "";
@@ -736,12 +743,15 @@ a {
 .filter-input-checkbox:hover + label::before {
   opacity: 1;
 }
+.filter-input-checkbox:disabled + label::after,
+.filter-input-checkbox:disabled + label::before,
+.filter-input-checkbox:disabled + label {
+  opacity: 0.3;
+}
 .filter-option label:hover {
   color: rgb(0,0,0);
 }
-.filter-option label:disabled {
-  color: rgba(40,49,54,0.3);
-}
+
 .range-filter {
   width: 260px;
   margin-bottom: 55px;
@@ -1001,10 +1011,9 @@ a {
 }
 
 /*catalog - Пагинация*/
-.pagination {
-  margin-top: 25px;
-}
+
 .pagination  ul{
+  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -1012,7 +1021,7 @@ a {
   list-style: none;
 }
 .pagination a {
-  float: left;
+  display: block;
   color: rgb(0,0,0);
   background-color: rgb(238,238,238);
   padding: 13px 20px;
@@ -1178,7 +1187,7 @@ a {
   background-color: white;
   top: 10%;
   left: 200px;
-
+    z-index: 4;
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
 }
 
@@ -1188,7 +1197,7 @@ a {
   padding-right: 100px;
   padding-bottom: 84px;
   padding-left: 100px;
-  display: inline-block;
+  z-index: 4;
 }
 .modal-header {
   display: flex;
@@ -1204,6 +1213,13 @@ a {
   height: 22px;
   border: 0;
   outline: none;
+  opacity: 0.4;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-close:active {
+  opacity: 0.1;
 }
 .modal-close::before,
 .modal-close::after {
@@ -1217,7 +1233,6 @@ a {
 
   background-color: rgb(251,89,93);
   border-radius: 2px;
-  opacity: 0.3;
 }
 .modal-close::before {
   transform: rotate(45deg);
@@ -1240,14 +1255,13 @@ a {
   line-height: 18px;
 
 }
-.block-name,
-.block-email {
-  display: inline-block;
-  float: left;
+.flex-block {
+  display: flex;
+  flex-wrap: nowrap;
 }
 .block-name .input-name {
   display: block;
-  width: 335px;
+  width: 350px;
   margin-top: 15px;
   margin-right: 45px;
   margin-bottom: 32px;
@@ -1255,10 +1269,11 @@ a {
 .block-email .input-email {
   margin-top: 15px;
   display: block;
-  width: 335px;
+  width: 350px;
   margin-bottom: 32px;
 }
 .block-text textarea {
+  display: block;
   margin-top: 15px;
   width: 736px;
   height: 118px;
@@ -1284,6 +1299,7 @@ a {
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
+  box-sizing: border-box;
 }
 .contact-form ::-webkit-input-placeholder {
   color: rgba(68,68,68,0.5);
@@ -1317,6 +1333,11 @@ a {
   color: rgb(68,68,68);
   opacity: 0,5;
   border: 2px solid rgb(68,68,68);
+}
+
+.contact-form input:invalid {
+  border: 2px solid rgb(231,66,70);
+  color: rgb(231,66,70);
 }
 .contact-form .user-email {
   font-size: 16px;
