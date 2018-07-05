@@ -676,7 +676,7 @@ a {
   left: -34px;
   top: 0;
 
-  border: 4px solid #000000;
+  border: 4px solid rgb(77,77,77);
   border-radius: 50%;
   opacity: 0.4;
 }
@@ -690,12 +690,15 @@ a {
 
   left: -26px;
   top: 8px;
-  background-color: #000000;
+  background-color: rgb(77,77,77);
   border-radius: 50%;
 
   opacity: 0.4;
 }
-
+.filter-radio:hover +label::after,
+.filter-radio:hover +label::before {
+  opacity: 1;
+}
 .filter-input-checkbox + label::after {
   content: "";
 
@@ -728,6 +731,10 @@ a {
 .filter-input-checkbox:checked + label::after {
   border: none;
   opacity: 0.4;
+}
+.filter-input-checkbox:hover + label::after,
+.filter-input-checkbox:hover + label::before {
+  opacity: 1;
 }
 .filter-option label:hover {
   color: rgb(0,0,0);
@@ -1166,8 +1173,101 @@ a {
 
 }
 /*Форма обратной связи*/
+.modal-form {
+  position: fixed;
+  background-color: white;
+  top: 10%;
+  left: 200px;
 
-.contact-form .user-name {
+  box-shadow: 0 20px 40px rgba(0,1,1,0.75);
+}
+
+.modal {
+  width: 760px;
+  padding-top: 64px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 100px;
+  display: inline-block;
+}
+.modal-header {
+  display: flex;
+  margin-bottom: 40px;
+
+}
+.modal-close {
+  font-size: 0;
+  align-items: center;
+  align-self: center;
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  outline: none;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  right: 100px;
+  top: 85px;
+  width: 21px;
+  height: 3px;
+
+  background-color: rgb(251,89,93);
+  border-radius: 2px;
+  opacity: 0.3;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-form .modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.modal-form .modal label {
+  color: rgb(0,0,0);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+
+}
+.block-name,
+.block-email {
+  display: inline-block;
+  float: left;
+}
+.block-name .input-name {
+  display: block;
+  width: 335px;
+  margin-top: 15px;
+  margin-right: 45px;
+  margin-bottom: 32px;
+}
+.block-email .input-email {
+  margin-top: 15px;
+  display: block;
+  width: 335px;
+  margin-bottom: 32px;
+}
+.block-text textarea {
+  margin-top: 15px;
+  width: 736px;
+  height: 118px;
+  margin-bottom: 47px;
+  resize: none;
+}
+
+.contact-form .user-name,
+.contact-form .user-email {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
@@ -1181,6 +1281,9 @@ a {
   color: rgba(68,68,68,0.5);
   border: 2px solid rgb(215,220,222);
   outline: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
 }
 .contact-form ::-webkit-input-placeholder {
   color: rgba(68,68,68,0.5);
