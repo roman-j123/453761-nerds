@@ -941,6 +941,9 @@ a {
   background-color: rgb(238,238,238);
   bottom: 0;
 }
+.products-list .product-item:hover {
+  box-shadow: 0 6px 15px rgba(0,1,1,0.25);
+}
 .products-list .product-item:hover .product-about {
   display: block;
 }
@@ -987,6 +990,12 @@ a {
   padding: 15px 20px;
   margin-right: 11px;
   border-radius: 2px;
+}
+.pagination li:nth-last-child(1) a {
+  padding: 15px;
+  width: 235px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .pagination a:hover:not(.page-active) {
   background-color: rgb(223,223,223);
