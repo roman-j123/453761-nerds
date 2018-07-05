@@ -99,6 +99,7 @@ a {
 }
 .gray:active {
   background-color: rgb(213,213,213);
+  color: rgba(0,0,0,0.5);
   outline: none;
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
@@ -189,7 +190,7 @@ a {
   background-color: rgb(238,238,238);
   color: rgb(0,0,0);
 }
-.main-links a:hover,
+.main-links a:hover:not(.use-link),
 .cart a:hover {
   color: rgb(251,86,90);
 }
@@ -820,7 +821,6 @@ a {
   line-height: 18px;
   color: rgb(0,0,0);
 }
-
 .sort-block {
   display: flex;
   margin-left: auto;
@@ -830,6 +830,26 @@ a {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+.catalog-header .sort-updown .sort-up {
+  background-image: url("../img/icon-up-dir.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+.catalog-header .sort-updown .sort-up:hover:not(.active-link),
+.catalog-header .sort-updown .sort-down:hover:not(.active-link) {
+  opacity: 0.6;
+}
+.catalog-header .sort-updown .sort-up:active,
+.catalog-header .sort-updown .sort-down:active {
+  opacity: 1;
+}
+.catalog-header .sort-updown .sort-down {
+  background-image: url("../img/icon-down-dir.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
 }
 
 .sort-list li {
@@ -842,13 +862,12 @@ a {
   position: relative;
   vertical-align: top;
 }
-
 .catalog-header .sort-list a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: rgba(0,0,0,0.3);
-  padding-right: 20px;
+  padding-right: 30px;
   text-transform: uppercase;
 }
 .catalog-header .sort-updown a {
@@ -856,32 +875,34 @@ a {
   font-weight: 400;
   line-height: 18px;
   color: rgba(0,0,0,0.3);
-  padding-left: 25px;
+  padding-left: 20px;
   text-transform: uppercase;
 }
 
 .catalog-header .sort-updown li:nth-last-child(1) a {
   padding-right: 0;
 }
-.catalog-header .sort-list a:hover,
-.catalog-header .sort-updown a:hover,
-.catalog-header .sort-list a:focus,
-.catalog-header .sort-updown a:focus {
+.catalog-header .sort-list a:hover:not(.active-link),
+.catalog-header .sort-list a:focus {
   color: rgba(0,0,0,0.6);
 }
 .catalog-header .sort-list a:active,
 .catalog-header .sort-updown a:active {
   color: rgb(0,0,0);
 }
-
+.catalog-header .sort-list .active-link,
+.catalog-header .sort-updown .active-link {
+  color: rgb(0,0,0);
+  opacity: 1;
+}
 /*catalog - список продуктов*/
 
 .products .products-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 5px;
-  margin-bottom: 60px;
+  padding-top: 10px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -948,52 +969,41 @@ a {
   width: 200px;
 }
 
-/*catalog - кнопки*/
-.pages {
+/*catalog - Пагинация*/
+.pagination {
+  margin-top: 40px;
+}
+.pagination  ul{
+  margin: 0;
   padding: 0;
 }
-.pages li {
-  width: 48px;
-  height: 48px;
+.pagination li {
   list-style: none;
-  background-color: rgb(238,238,238);
-  display: inline-block;
-  text-align: center;
-  border-radius: 3px;
-  border: 2px solid rgb(238,238,238);
-
-  padding: 0 auto;
 }
-.pages li:nth-last-child(1){
-  width: auto;
-}
-.pages li a {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
+.pagination a {
+  float: left;
   color: rgb(0,0,0);
+  background-color: rgb(238,238,238);
+  padding: 15px 20px;
+  margin-right: 11px;
+  border-radius: 2px;
 }
-.pages li:hover,
-.pages li button:hover {
+.pagination a:hover:not(.page-active) {
   background-color: rgb(223,223,223);
-  border: 2px solid rgb(223,223,223);
 }
-.pages li:focus,
-.pages li button:focus {
+.pagination a:active:not(.page-active) {
   background-color: rgb(213,213,213);
-  border: 2px solid rgb(213,213,213);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-.pages li:active,
-.pages li button:active {
+.pagination .page-active {
+  padding: 12px 17px;
   background-color: rgb(255,255,255);
-  border: 2px solid rgb(219,219,219);
-
+  border: 3px solid rgb(219,219,219);
+  box-sizing: border-box;
 }
-
-
 /*Контакты*/
 .contact-map {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .contact-map img {
