@@ -35,7 +35,7 @@ a {
 }
 .btn-xbig {
   width: 260px;
-  padding: 16px 0;
+  padding: 17px 0;
 }
 .btn-big {
   width: 240px;
@@ -648,7 +648,7 @@ a {
   list-style: none;
 
 
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding-left: 35px;
 }
 
@@ -1130,7 +1130,7 @@ a {
 }
 .social-icons .social-icons-item:active {
   background-color: rgb(215,55,59);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 .social-icons-item a {
   display: block;
