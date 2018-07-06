@@ -19,107 +19,100 @@
             <ul class="main-links">
               <li><a href="#">Студия</a></li>
               <li><a href="#">Клиенты</a></li>
-              <li><a href="catalog.html" class="use-link">Магазин</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
-        <div class="cart-block">
-          <ul class="cart">
-            <li><a href="#">Корзина</a></li>
-          </ul>
+          <div class="cart-block">
+            <ul class="cart">
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      </div>
-        <h1 class="page-header">Магазин готовых шаблонов</h1>
+      <h1 class="page-header">Магазин готовых шаблонов</h1>
     </header>
-
     <main>
       <div class="center">
         <div class="wrapper">
-      <section class="menu">
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend class="first">Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+          <section class="menu">
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend class="first">Стоимость:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                        <div class="toggle lower"></div>
+                        <div class="toggle higher"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="lower-value">От:
+                        <input name="lower-value" class="price-input" type="text" value="0">
+                      </label>
+                      <label class="higher-value">До:
+                        <input name="higher-value" class="price-input" type="text" value="15000">
+                      </label>
+                    </div>
                   </div>
-                <div class="toggle lower"></div>
-                <div class="toggle higher"></div>
+              </fieldset>
+              <fieldset class="grid-block">
+                <legend>Сетка:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input type="radio" name="pattern-group" value="adapt" id="filter-adapt" class="filter-radio visually-hidden" checked>
+                      <label for="filter-adapt">Адаптивная</label>
+                    </li>
+                    <li class="filter-option">
+                      <input type="radio" name="pattern-group" value="fixed" id="filter-fixed" class="filter-radio visually-hidden">
+                      <label for="filter-fixed">Фиксированная</label>
+                    </li>
+                    <li class="filter-option">
+                      <input type="radio" name="pattern-group" value="rubber" id="filter-rubber" class="filter-radio visually-hidden">
+                      <label for="filter-rubber">Резиновая</label>
+                    </li>
+                  </ul>
+              </fieldset>
+              <fieldset class="feat-block">
+                <legend>Особенности:</legend>
+                  <ul>
+                    <li class="filter-option">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="slider-check" checked>
+                      <label for="slider-check">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantage" id="advant-check">
+                      <label for="advant-check">Блок преимуществ</label></li>
+                    <li class="filter-option">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="news-check" checked>
+                      <label for="news-check">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="gal-check">
+                      <label for="gal-check">Галерея</label></li>
+                    <li class="filter-option">
+                      <input class="filter-input-checkbox visually-hidden" type="checkbox" name="cart" id="cart-check">
+                      <label for="cart-check">Корзина</label></li>
+                    </ul>
+              </fieldset>
+              <button type="submit" class="btn btn-xbig gray">Показать</button>
+            </form>
+          </section>
+          <section class="catalog">
+            <div class="catalog-header">
+              <h2>Сортировать:</h2>
+              <div class="sort-block">
+                <ul class="sort-list">
+                  <li class="sort-item"><a href="#" aria-label="Сортировать по цене" class="active-link">По цене</a></li>
+                  <li class="sort-item"><a href="#" aria-label="Сортировать по типу">По типу</a></li>
+                  <li class="sort-item"><a href="#" aria-label="Сортировать по названию">По названию</a></li>
+                </ul>
+                <ul class="sort-updown">
+                  <li class="sort-item-up"><a href="#" aria-label="Сортировать по убыванию" class="sort-down active-link"><span class="visually-hidden">Сортировать по убыванию</span></a></li>
+                  <li class="sort-item-down"><a href="#" aria-label="Сортировать по возрастанию" class="sort-up"><span class="visually-hidden">Сортировать по возрастанию</span></a></li>
+                </ul>
               </div>
-                <div class="price-controls">
-                <label class="lower-value">От:
-                  <input name="lower-value" class="price-input" type="text" value="0">
-                </label>
-                <label class="higher-value">До:
-                  <input name="higher-value" class="price-input" type="text" value="15000">
-                </label>
-                </div>
             </div>
-          </fieldset>
-          <fieldset class="grid-block">
-            <legend>Сетка:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="adapt" id="filter-adapt" class="filter-radio visually-hidden" checked>
-                  <label for="filter-adapt">Адаптивная</label>
-                </li>
-                <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="fixed" id="filter-fixed" class="filter-radio visually-hidden">
-                  <label for="filter-fixed">Фиксированная</label>
-                </li>
-                <li class="filter-option">
-                  <input type="radio" name="pattern-group" value="rubber" id="filter-rubber" class="filter-radio visually-hidden">
-                  <label for="filter-rubber">Резиновая</label>
-                </li>
-              </ul>
-          </fieldset>
-
-          <fieldset class="feat-block">
-            <legend>Особенности:</legend>
-              <ul>
-                <li class="filter-option">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="slider-check" checked>
-                  <label for="slider-check">Слайдер</label>
-                </li>
-                <li class="filter-option">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantage" id="advant-check">
-                  <label for="advant-check">Блок преимуществ</label></li>
-                <li class="filter-option">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="news-check" checked>
-                  <label for="news-check">Новости</label>
-                </li>
-                <li class="filter-option">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="gal-check">
-                  <label for="gal-check">Галерея</label></li>
-                <li class="filter-option">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="cart" id="cart-check">
-                  <label for="cart-check">Корзина</label></li>
-              </ul>
-          </fieldset>
-          <button type="submit" class="btn btn-xbig gray">Показать</button>
-        </form>
-      </section>
-
-      <section class="catalog">
-        <div class="catalog-header">
-          <div class="header-block">
-            <h2>Сортировать:</h2>
-            <div class="sort-block">
-              <ul class="sort-list">
-                <li class="sort-item"><a href="#" aria-label="Сортировать по цене" class="active-link">По цене</a></li>
-                <li class="sort-item"><a href="#" aria-label="Сортировать по типу">По типу</a></li>
-                <li class="sort-item"><a href="#" aria-label="Сортировать по названию">По названию</a></li>
-              </ul>
-              <ul class="sort-updown">
-                <li class="sort-item-up"><a href="#" aria-label="Сортировать по убыванию" class="sort-down active-link"><span class="visually-hidden">Сортировать по убыванию</span></a></li>
-                <li class="sort-item-down"><a href="#" aria-label="Сортировать по возрастанию" class="sort-up"><span class="visually-hidden">Сортировать по возрастанию</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
             <div class="products">
               <ul class="products-list">
                 <li class="product-item">
@@ -130,7 +123,7 @@
                     <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Sedona за ">9900 руб.</a>
                   </div>
                 </li>
-                <li class="product-item">
+                  <li class="product-item">
                   <img src="img/products/img-pink.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
                   <div class="product-about">
                     <a href="product-card.html"><h2>Pink App</h2></a>
@@ -172,7 +165,6 @@
                 </li>
               </ul>
             </div>
-
             <footer class="pagination">
               <ul>
                 <li><a class="page-active">1</a></li>
@@ -181,12 +173,10 @@
                 <li><a href="">Следующая</a></li>
               </ul>
             </footer>
-
-      </section>
-    </div>
-    </div>
+          </section>
+        </div>
+      </div>
     </main>
-
     <footer>
       <section class="contact-map">
         <div class="center">
@@ -202,7 +192,6 @@
         </div>
         <img src="img/map_d.jpg" width="1440" height="416" alt="Карта">
       </section>
-
       <section class="social-thanks">
         <div class="center">
           <div class="wrapper">
@@ -225,30 +214,30 @@
     </footer>
     <section class="modal-form">
       <div class="modal-wrapper">
-      <div class="modal">
-        <div class="modal-header">
-          <h2>Напишите нам</h2>
-          <button class="modal-close" type="button">Закрыть</button>
-        </div>
-        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="flex-block">
-          <div class="block-name">
-            <label for="user-name" class="user-name">Ваше имя:</label><br>
-            <input class="input-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+        <div class="modal">
+          <div class="modal-header">
+            <h2>Напишите нам</h2>
+            <button class="modal-close" type="button">Закрыть</button>
           </div>
-
-          <div class="block-email">
-            <label for="user-email" class="user-email">Ваш e-mail:</label><br>
-            <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
-          </div>
-        </div>
-          <div class="block-text">
-          <label class="user-text">Текст письма:
-          <textarea placeholder="В свободной форме" class="input-text"></textarea></label>
-        </div>
+          <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="flex-block">
+              <div class="block-name">
+                <label for="user-name" class="user-name">Ваше имя:</label><br>
+                <input class="input-name" type="text" name="user-name" id="user-name" placeholder="Имя Фамилия">
+              </div>
+              <div class="block-email">
+                <label for="user-email" class="user-email">Ваш e-mail:</label><br>
+                <input class="input-email" type="email" name="user-email" id="user-email" placeholder="email@example.com">
+              </div>
+            </div>
+            <div class="block-text">
+              <label class="user-text">Текст письма:
+              <textarea placeholder="В свободной форме" class="input-text"></textarea>
+              </label>
+            </div>
           <button type="submit" class="btn btn-medium" value="Отправить">Отправить</button>
-        </form>
-      </div>
+          </form>
+        </div>
       </div>
     </section>
   </body>
