@@ -1202,7 +1202,7 @@ a {
 /*Форма обратной связи*/
 
 .modal-form {
-  display: flex;
+  display: none;
   align-items: center;
   position: fixed;
   width: 100%;
