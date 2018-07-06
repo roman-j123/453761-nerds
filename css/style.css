@@ -1184,14 +1184,15 @@ a {
 /*Форма обратной связи*/
 .modal-form {
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 4;
 }
 .modal-wrapper {
-  margin: 0 auto;
+  margin: auto;
 }
 .modal {
   display: block;
