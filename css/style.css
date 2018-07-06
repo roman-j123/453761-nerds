@@ -1261,6 +1261,7 @@ a {
   background-color: rgb(251,89,93);
   border-radius: 2px;
   right: 0;
+  top: 8px;
 }
 .modal-close::before {
   -webkit-transform: rotate(45deg);
