@@ -1193,6 +1193,7 @@ a {
 }
 .modal-wrapper {
   margin: auto;
+  position: relative;
 }
 .modal {
   display: block;
@@ -1204,6 +1205,7 @@ a {
   z-index: 4;
   box-shadow: 0 20px 40px rgba(0,1,1,0.75);
   background-color: rgb(255,255,255);
+
 }
 .modal-header {
   display: flex;
@@ -1212,14 +1214,14 @@ a {
 }
 .modal-close {
   font-size: 0;
-  align-items: center;
-  align-self: center;
+  position: relative;
   width: 21px;
   height: 21px;
   border: 0;
   outline: none;
   background-color: transparent;
   opacity: 0.4;
+  margin: auto;
 }
 .modal-close:hover {
   opacity: 1;
@@ -1234,7 +1236,6 @@ a {
   position: absolute;
   width: 27px;
   height: 3px;
-  right: 340px;
   background-color: rgb(251,89,93);
   border-radius: 2px;
 }
