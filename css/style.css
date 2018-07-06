@@ -610,17 +610,22 @@ a {
 
 /*catalog - фильтры*/
 .menu {
-  margin-top: 55px;
+  margin-top: 52px;
   min-width: 260px;
   margin-right: 140px;
 }
-
-.menu ul {
-  padding: 0;
-}
 .filter .first {
   text-transform: uppercase;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
+}
+.filter .grid-block {
+  margin-bottom: 28px;
+}
+.filter .feat-block {
+  margin-bottom: 28px;
+}
+.menu ul {
+  padding: 0;
 }
 .filter legend {
   font-size: 18px;
@@ -628,8 +633,9 @@ a {
   line-height: 30px;
   color: rgb(0,0,0);
   text-transform: uppercase;
-
-  margin-bottom: 10px;
+}
+.filter legend:nth-last-child(1) {
+  margin-top: 50px;
 }
 .filter fieldset {
   margin: 0;
@@ -648,8 +654,8 @@ a {
   color: rgb(40,49,54);
   list-style: none;
 
-
-  margin-bottom: 17px;
+  margin-top: 11px;
+  margin-bottom: 18px;
   padding-left: 35px;
 }
 
@@ -661,12 +667,7 @@ a {
 
   user-select: none;
 }
-.grid-block {
-  margin-bottom: 50px;
-}
-.feat-block {
-  margin-bottom: 50px;
-}
+
 .filter-radio + label::after {
   content: "";
 
