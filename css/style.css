@@ -213,9 +213,8 @@ a {
   padding-right: 0;
 }
 .main-links .use-link {
-  /*padding-bottom: 2px;
-  border-bottom: 2px solid rgb(251,86,90);*/
-  box-shadow: 0 3px 0 rgb(251,86,90);
+  padding-bottom: 2px;
+  box-shadow: 0 2px 0 rgb(251,86,90);
 }
 .cart-block {
   font-size: 16px;
@@ -370,7 +369,7 @@ a {
 
 .service h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   color: rgb(0,0,0);
@@ -598,7 +597,7 @@ a {
 
 .main-header .page-header {
   margin: 0;
-  padding-top: 71px;
+  padding-top: 69px;
   padding-bottom: 108px;
   font-size: 55px;
   font-weight: 500;
