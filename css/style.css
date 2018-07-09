@@ -44,7 +44,7 @@ a {
 }
 .btn-medium {
   width: 220px;
-  padding: 15px 0;
+  padding: 16px 0;
 }
 .btn-small {
    width: 160px;
@@ -200,7 +200,7 @@ a {
   background-color: rgb(238,238,238);
   color: rgb(0,0,0);
 }
-.main-links a:hover:not(.use-link),
+.main-links a:hover,
 .cart a:hover {
   color: rgb(251,86,90);
 }
@@ -382,6 +382,7 @@ a {
   margin-bottom: 14px;
 }
 .service .text-sub {
+  width: 250px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -503,7 +504,7 @@ a {
   margin-left: 15px;
 }
 .stats .procent-numbers {
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 35px;
   font-size: 45px;
   font-weight: 700;
@@ -601,7 +602,7 @@ a {
 .main-header .page-header {
   margin: 0;
   padding-top: 71px;
-  padding-bottom: 110px;
+  padding-bottom: 108px;
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
@@ -613,7 +614,7 @@ a {
 /*catalog - фильтры*/
 
 .menu {
-  margin-top: 52px;
+  margin-top: 54px;
   min-width: 260px;
   margin-right: 140px;
 }
@@ -622,7 +623,7 @@ a {
   margin-bottom: 48px;
 }
 .filter .grid-block {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 .filter .feat-block {
   margin-bottom: 32px;
@@ -841,11 +842,11 @@ a {
 
 .catalog {
   width: 760px;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 }
 .catalog-header {
   margin-top: 55px;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   margin-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -856,6 +857,7 @@ a {
 }
 .catalog-header h2 {
   margin: 0;
+  padding-top: 2px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -951,8 +953,8 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 8px;
-  margin-bottom: 30px;
+  padding-top: 6px;
+  margin-bottom: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,7 +964,7 @@ a {
 .products-list .product-item {
   width: 360px;
   padding-top: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   position: relative;
 }
 .products-list .product-item::before {
@@ -1039,7 +1041,7 @@ a {
   color: rgb(0,0,0);
   background-color: rgb(238,238,238);
   padding: 13px 20px;
-  margin-right: 11px;
+  margin-right: 12px;
   border-radius: 2px;
 }
 .pagination li:nth-last-child(1) a {
@@ -1085,7 +1087,10 @@ a {
 }
 .contact-info .contact-block {
   position: relative;
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 47px;
 }
  .contact-info .contact-block .text-header {
   font-size: 18px;
@@ -1121,13 +1126,13 @@ a {
   letter-spacing: 0.1px;
   word-spacing: 1px;
   margin-top: 18px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 /*Кнопки социальных сетей*/
 
 .social-thanks {
-  padding-top: 68px;
+  padding-top: 58px;
   padding-bottom: 68px;
 }
 .social-thanks .social-icons {
@@ -1138,10 +1143,11 @@ a {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 .social-thanks .footer-text .text-header {
   margin: 0;
-  margin-top: 2px;
+  margin-top: 9px;
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
@@ -1157,8 +1163,7 @@ a {
 .social-icons .social-icons-item {
   background-color: rgb(225,225,225);
   border-radius: 50%;
-  margin-right: 12px;
-
+  margin-right: 13px;
 }
 .social-icons .social-icons-item:nth-last-child(1) {
   margin-right: 0;
@@ -1173,8 +1178,8 @@ a {
 }
 .social-icons-item a {
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 78px;
+  height: 78px;
 }
 .social-icons-item .vk {
   background-image: url("../img/vk-icon.svg");
@@ -1198,10 +1203,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
 }
 .footer-block .footer-text {
-  margin-top: 5px;
-  margin-left: 135px;
+  margin-top: 8px;
+  margin-left: 139px;
 
 }
 
@@ -1370,6 +1376,11 @@ a {
 .contact-form :focus:-moz-placeholder {
   color: rgb(68,68,68);
 }
+.contact-form textarea:hover,
+.contact-form input:hover {
+  border: 2px solid rgb(180,185,187);
+}
+
 .contact-form textarea:focus,
 .contact-form input:focus {
   font-size: 16px;
