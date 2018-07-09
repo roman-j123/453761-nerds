@@ -417,7 +417,7 @@ body {
 .about-us .wrapper {
     border-top: 2px solid #eee;
     padding-top: 75px;
-    padding-bottom: 72px
+    padding-bottom: 73px
 }
 
 .about-us-details .text-header {
@@ -428,8 +428,8 @@ body {
 }
 
 .about-us-details .text-sub {
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 23px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -1137,6 +1137,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0
