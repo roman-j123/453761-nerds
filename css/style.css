@@ -1090,7 +1090,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   height: 416px;
-  width: 1440px;
+  max-width: 1440px;
   display: block;
   margin: 0 auto;
 }
