@@ -411,6 +411,9 @@ a {
   width: 300px;
   margin-right: 100px;
 }
+.service-list .service-item img {
+  display: block;
+}
 
 /*index - О компании*/
 
@@ -966,6 +969,9 @@ a {
   margin-bottom: 33px;
   position: relative;
 }
+.products-list .product-item img {
+  display: block;
+}
 .products-list .product-item::before {
   content: "";
   position: absolute;
@@ -990,6 +996,8 @@ a {
   position: absolute;
   background-color: rgb(238,238,238);
   bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .products-list .product-item:hover {
   -webkit-box-shadow: 0 6px 15px rgba(0,1,1,0.25);
@@ -1021,6 +1029,9 @@ a {
   line-height: 18px;
   color: rgb(102,102,102);
   text-align: center;
+}
+.products-list .product-about span {
+  display: block;
 }
 .product-about .btn {
   display: block;
@@ -1078,6 +1089,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   height: 416px;
+  width: 1440px;
   display: block;
   margin: 0 auto;
 }

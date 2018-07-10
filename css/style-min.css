@@ -409,6 +409,9 @@ body {
     width: 300px;
     margin-right: 100px
 }
+.service-list .service-item img {
+  display: block;
+}
 
 .about-us-details {
     width: 660px;
@@ -971,6 +974,9 @@ body {
     margin-bottom: 33px;
     position: relative
 }
+.products-list .product-item img {
+  display: block;
+}
 
 .products-list .product-item::before {
     content: "";
@@ -993,7 +999,12 @@ body {
     display: none;
     position: absolute;
     background-color: #eee;
-    bottom: 0
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.products-list .product-about span {
+  display: block;
 }
 
 .products-list .product-item:hover {
@@ -1006,7 +1017,7 @@ body {
     display: block
 }
 
-.products-list .product-item h2 {
+.product-item .product-about h2 {
     margin: 0 0 15px;
     font-size: 18px;
     font-weight: 700;
@@ -1022,7 +1033,7 @@ body {
     font-weight: 400;
     line-height: 18px;
     color: #666;
-    text-align: center
+    text-align: center;
 }
 
 .product-about .btn {
@@ -1082,8 +1093,10 @@ body {
     background-image: url(../img/map_d.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgb(233,229,220);
     height: 416px;
     display: block;
+    width: 1440px;
     margin: 0 auto
 }
 
