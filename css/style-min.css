@@ -369,7 +369,7 @@ body {
     text-transform: uppercase;
     color: #000;
     margin-left: 0;
-    margin-top: 19px;
+    margin-top: 25px;
     margin-bottom: 14px
 }
 
@@ -1163,7 +1163,7 @@ body {
 }
 
 .social-thanks .footer-text .text-header {
-    margin: 9px 0 0;
+    margin: 10px 0 0;
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
