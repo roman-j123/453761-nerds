@@ -287,6 +287,7 @@ body {
 .slider-controls label {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
     width: 18px;
     height: 18px;
     padding: 8px;
@@ -814,6 +815,7 @@ body {
 
 .price-controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 50%;
     font-size: 16px;
     text-transform: uppercase
@@ -964,8 +966,9 @@ body {
 
 .products-list .product-item {
     width: 360px;
+    height: 576px;
     padding-top: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
     position: relative
 }
 
@@ -986,16 +989,17 @@ body {
 }
 
 .products-list .product-about {
-    padding: 30px 60px 43px;
-    position: absolute;
+    padding: 28px 60px 43px;
     display: none;
+    position: absolute;
     background-color: #eee;
     bottom: 0
 }
 
 .products-list .product-item:hover {
     -webkit-box-shadow: 0 6px 15px rgba(0,1,1,.25);
-    box-shadow: 0 6px 15px rgba(0,1,1,.25)
+    box-shadow: 0 6px 15px rgba(0,1,1,.25);
+    background-color: #eee
 }
 
 .products-list .product-item:hover .product-about {
@@ -1003,6 +1007,7 @@ body {
 }
 
 .products-list .product-item h2 {
+    margin: 0 0 15px;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -1012,6 +1017,7 @@ body {
 }
 
 .product-item .product-about p {
+    margin: 0 0 29px;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
